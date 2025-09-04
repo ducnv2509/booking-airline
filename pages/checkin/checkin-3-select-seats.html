@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="..\..\.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Flight booking -
+    vietinbank
+    default
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="fonts/main/svn-gilroy.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.bundles.css">
+  <!-- end bootstrap -->
+  <!-- gliderjs -->
+  <link rel="stylesheet" href="css/vendors/gliderjs/gliderjs.bundles.css">
+  <!-- end gliderjs -->
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/vendors/select2/select2.bundles.css">
+  <!-- end select2 -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.bundles.css">
+  <link rel="shortcut icon" type="text/html" href="media/favicon/favicon.png">
+    <script src="../../js/theme.js"></script>
+
+</head>
+
+<body class="theme-vietinbank color-theme-default">
+  <!-- _header -->
+  <header class="header-menu">
+    <div class="header-inner">
+      <div class="container">
+        <div class="row row-0 align-items-center">
+          <div class="col header-left">
+            <div class="header-left-wrap">
+              <div class="header-left-inner">
+                <a href="pages/index.html" class="header-link-item hover-c">Đặt vé máy bay</a>
+                <a href="pages/booking-history/booking-history-list.html" class="header-link-item hover-c">Lịch sử đặt vé</a>
+                <a href="pages/payment/payment.html" class="header-link-item hover-c">Thanh toán vé máy bay</a>
+                <a href="pages/checkin/checkin-1.html" class="header-link-item hover-c active">Làm thủ tục</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto header-right">
+            <div class="header-right-wrap">
+              <!-- button.btn -->
+              <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active btn-call-header" href="tel:1900.5555.20">
+                <div class="ubtn-full">
+                  <div class="row row-8 ubtn-inner justify-content-center">
+                    <span class="ubtn-ic col-auto">
+                      <img src="media/icons-color/default/default/24x24-phone.svg" alt="" class="ic-default">
+                    </span>
+                    <span class="ubtn-text">1900.5555.20</span>
+                  </div>
+                </div>
+              </a>
+              <!-- end button.btn -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end _header -->
+  <div class="main main-with-header">
+    <div class="main-wrap">
+      <div class="main-inner main-inner-page">
+        <div class="steps-wrap">
+          <div class="container">
+            <!-- _custom.steps -->
+            <div class="steps">
+              <div class="steps__wrap row row-0">
+                <div class="col active checked steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">1</div>
+                    </div>
+                    <div class="steps__txt h5">Chọn hành khách</div>
+                  </div>
+                </div>
+                <div class="col active steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">2</div>
+                    </div>
+                    <div class="steps__txt h5">Chọn chỗ ngồi</div>
+                  </div>
+                </div>
+                <div class="col steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">3</div>
+                    </div>
+                    <div class="steps__txt h5">Cập nhật thông tin</div>
+                  </div>
+                </div>
+                <div class="col steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">4</div>
+                    </div>
+                    <div class="steps__txt h5">Xác nhận</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end _custom.steps -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-24 justify-content-center">
+            <div class="col-lg-8">
+              <div class="flight-info flight-info-checkin">
+                <div class="flight-info-block-info flight-info-block list-mb16 list-last-mb">
+                  <div class="box box-border box-full-mb">
+                    <div class="box__body">
+                      <div class="list-mb24 list-last-mb" data-accordion-group="data-accordion-group">
+                        <div class="form-title list-mb16 list-last-mb">
+                          <div class="h3">
+                            Chọn chỗ ngồi
+                          </div>
+                        </div>
+                        <div class="flight-list-picked-title">
+                          <div class="h4">Chuyến bay: HAN - DAD</div>
+                        </div>
+                        <!-- _custom.boxAccordion -->
+                        <div class="box-accordion-wrap open open-init" data-accordion="data-accordion">
+                          <div class="box box-accordion box-border box-select">
+                            <div class="box__body cursor-pointer" data-control="data-control">
+                              <div class="title">
+                                <div class="row row-16 h3 align-items-center h3-md-p">
+                                  <div class="col-md col">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col-auto">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-auto">
+                                        Vietnam Airlines
+                                        <div class="p3">VN1234</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto">
+                                    <!-- button.btn -->
+                                    <a class="ubtn ubg-sub-primary ubtn-size-sm ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectSeat">
+                                      <div class="ubtn-full">
+                                        <div class="ubtn-inner justify-content-center">
+                                          <span class="ubtn-text">Chọn chỗ</span>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <!-- end button.btn -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="box__body-accordion" data-content="data-content">
+                              <div class="box__body">
+                                <div class="list-line-select">
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE VAN LONG
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              Chưa chọn
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE NGUYEN NGOC
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE TRAM
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end _custom.boxAccordion -->
+                        <div class="flight-list-picked-title">
+                          <div class="h4">Chuyến bay: DAD - SGN</div>
+                        </div>
+                        <!-- _custom.boxAccordion -->
+                        <div class="box-accordion-wrap" data-accordion="data-accordion">
+                          <div class="box box-accordion box-border box-select">
+                            <div class="box__body cursor-pointer" data-control="data-control">
+                              <div class="title">
+                                <div class="row row-16 h3 align-items-center h3-md-p">
+                                  <div class="col-md col">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col-auto">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-auto">
+                                        Vietnam Airlines
+                                        <div class="p3">VN1234</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto">
+                                    <!-- button.btn -->
+                                    <a class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectSeat">
+                                      <div class="ubtn-full">
+                                        <div class="ubtn-inner justify-content-center">
+                                          <span class="ubtn-text">Chọn lại</span>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <!-- end button.btn -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="box__body-accordion" data-content="data-content">
+                              <div class="box__body">
+                                <div class="list-line-select">
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE VAN LONG
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              Chưa chọn
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE NGUYEN NGOC
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE TRAM
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end _custom.boxAccordion -->
+                        <div class="flight-list-picked-title">
+                          <div class="h4">Chuyến bay: DAD - SGN</div>
+                        </div>
+                        <!-- _custom.boxAccordion -->
+                        <div class="box-accordion-wrap" data-accordion="data-accordion">
+                          <div class="box box-accordion box-border box-select">
+                            <div class="box__body cursor-pointer" data-control="data-control">
+                              <div class="title">
+                                <div class="row row-16 h3 align-items-center h3-md-p">
+                                  <div class="col-md col">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col-auto">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-auto">
+                                        Vietnam Airlines
+                                        <div class="p3">VN1234</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto">
+                                    <!-- util.tag -->
+                                    <div class="tag ubg-sub-danger tag-size-default">
+                                      <div class="tag-title p3 weight5">
+                                        Chọn chỗ ngồi không khả dụng
+                                      </div>
+                                    </div>
+                                    <!-- end util.tag -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="box__body-accordion" data-content="data-content">
+                              <div class="box__body">
+                                <div class="list-line-select">
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE VAN LONG
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              Chưa chọn
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE NGUYEN NGOC
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="list-line-select-item">
+                                    <div class="row row-16 align-items-center">
+                                      <div class="col">
+                                        <div class="row row-16 align-items-center">
+                                          <div class="col-md-6">
+                                            <div class="h4 title">
+                                              LE TRAM
+                                            </div>
+                                          </div>
+                                          <div class="col sub-title color-sub-default">
+                                            Chỗ ngồi:
+                                            <span class="color-default">
+                                              25D
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end _custom.boxAccordion -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- _custom.formBtnGroup -->
+              <div class="form-btn-group">
+                <div class="row row-8 list-mb8 list-crop">
+                  <div class="">
+                    <!-- button.btn -->
+                    <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" href="pages/checkin/checkin-2-customer-select.html">
+                      <div class="ubtn-full">
+                        <div class="row row-8 ubtn-inner justify-content-center">
+                          <span class="ubtn-ic col-auto">
+                            <img src="media/icons-color/default/default/24x24-chevronleft.svg" alt="" class="ic-default">
+                          </span>
+                          <span class="ubtn-text">Quay lại</span>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- end button.btn -->
+                  </div>
+                  <div class="block-right">
+                    <!-- button.btn -->
+                    <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" href="pages/checkin/checkin-4-update-info.html">
+                      <div class="ubtn-full">
+                        <div class="row row-8 ubtn-inner justify-content-center">
+                          <span class="ubtn-text">Tiếp tục</span>
+                          <span class="ubtn-ic col-auto">
+                            <img src="media/icons-color/invert/default/24x24-chevronright.svg" alt="" class="ic-default">
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- end button.btn -->
+                  </div>
+                </div>
+              </div>
+              <!-- end _custom.formBtnGroup -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="main-footer-inner">
+          <div class="container">
+            <div class="row row-4 justify-content-center align-items-center">
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Điều khoản sử dụng dịch vụ đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Biểu phí dịch vụ đặt vé</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<!-- modal.modal -->
+<div class="modal fade modal-type-block" id="modalSelectSeat" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-size-default modal-dialog-scrollable modal-select-seat" role="document">
+    <div class="modal-content text-left">
+      <div class="modal-header">
+        <div class="modal-wrap">
+          <div class="row row-20 modal-title">
+            <div class="col">
+              <div class="h2">
+                Chọn ghế
+              </div>
+            </div>
+          </div>
+          <div class="modal-close-btn">
+            <!-- button.btn -->
+            <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+              </div>
+            </button>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-extend-section ubg-porcelain-light">
+        <div class="plane-header">
+          <div class="row row-16">
+            <div class="col h3">
+              BOEING 787
+            </div>
+            <div class="col-auto">
+              <!-- dropdown.dropdown -->
+              <div class="dropdown dropdown-mobile-wrap dropdown-seat-info-wrap">
+                <div class="dropdown-ic-toggle color-sub-default" data-toggle="dropdown">
+                  <div class="row row-8 align-items-center">
+                    <div class="col-auto">
+                      <img src="media/icons-color/subdefault/default/24x24-information-circle.svg" alt="" class="ic-default">
+                    </div>
+                    <div class="col-auto">
+                      Chú thích
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu dropdown-menu-right dropdown-mobile dropdown-size-md" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-uheader">
+                    <div class="dropdown-mobile-title">
+                      <div class="row">
+                        <div class="col">
+                          <div class="title h3">Chú thích</div>
+                        </div>
+                        <div class="col-auto">
+                          <!-- button.btn -->
+                          <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active dropdown-close">
+                            <div class="ubtn-full">
+                              <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                            </div>
+                          </button>
+                          <!-- end button.btn -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-uheader-content">
+                    </div>
+                  </div>
+                  <div class="dropdown-body">
+                    <ul class="dropdown-seat-info">
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--normal"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế thường
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--escape"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế gần cửa thoát hiểm
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--front"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế phía trước
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--selecting"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế đang chọn
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--special"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế đặc biệt
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row row-16 align-items-center">
+                          <div class="col-auto icon-wrap">
+                            <div class="icon-seat icon-seat--selected"></div>
+                          </div>
+                          <div class="col title">
+                            Ghế đã chọn
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-footer">
+                    <div class="row row-8 justify-content-between">
+                      <div class="col-12">
+                        <!-- button.btn -->
+                        <button class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active dropdown-close">
+                          <div class="ubtn-full">
+                            <div class="ubtn-inner justify-content-center">
+                              <span class="ubtn-text">Đóng</span>
+                            </div>
+                          </div>
+                        </button>
+                        <!-- end button.btn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end dropdown.dropdown -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" body-scroll-lock-ignore="body-scroll-lock-ignore">
+        <div class="seat-wrap">
+          <div class="seat">
+            <div class="seat-header"></div>
+            <div class="seat-body">
+              <div class="seat-exit-door">
+                EXIT DOORS
+              </div>
+              <div class="seat-section">
+                <div class="seat-row seat-row-aphabet">
+                  <label class="seat-label">
+                    A
+                  </label>
+                  <label class="seat-label">
+                    B
+                  </label>
+                  <label class="seat-label">
+                    C
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    D
+                  </label>
+                  <label class="seat-label">
+                    E
+                  </label>
+                  <label class="seat-label">
+                    F
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    1
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="F1">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A2">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <div class="icon-seat icon-seat--selected">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C2">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    2
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D2">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E2">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F2">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    3
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F3">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    4
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                  <label class="seat-label seat-vip">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F4">
+                      <div class="icon-seat-handle"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="seat-exit-door">
+                EXIT DOORS
+              </div>
+              <div class="seat-section">
+                <div class="seat-row seat-row-aphabet">
+                  <label class="seat-label">
+                    A
+                  </label>
+                  <label class="seat-label">
+                    B
+                  </label>
+                  <label class="seat-label">
+                    C
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    D
+                  </label>
+                  <label class="seat-label">
+                    E
+                  </label>
+                  <label class="seat-label">
+                    F
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    G
+                  </label>
+                  <label class="seat-label">
+                    H
+                  </label>
+                  <label class="seat-label">
+                    I
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="B5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="C5">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    5
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="D5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="E5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="F5">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    5
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="G5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="H5">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I5">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="A6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="B6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="C6">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    6
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="D6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="E6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="F6">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    6
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="G6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="H6">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="I6">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A7">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <div class="icon-seat icon-seat--selected">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <div class="icon-seat icon-seat--selected">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    7
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="D7">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="E7">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="F7">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    7
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="G7">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--front" data-tooltip="tooltip" title="H7">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I7">
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="seat-exit-door">
+                EXIT DOORS
+              </div>
+              <div class="seat-section">
+                <div class="seat-row seat-row-aphabet">
+                  <label class="seat-label">
+                    A
+                  </label>
+                  <label class="seat-label">
+                    B
+                  </label>
+                  <label class="seat-label">
+                    C
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    D
+                  </label>
+                  <label class="seat-label">
+                    E
+                  </label>
+                  <label class="seat-label">
+                    F
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    G
+                  </label>
+                  <label class="seat-label">
+                    H
+                  </label>
+                  <label class="seat-label">
+                    I
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C8">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    8
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F8">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    8
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H8">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I8">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C9">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    9
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F9">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    9
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H9">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I9">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C10">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    10
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F10">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    10
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H10">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I10">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C11">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    11
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F11">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    11
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H11">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I11">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C12">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    12
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F12">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    12
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H12">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I12">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C13">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    13
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F13">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    13
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H13">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I13">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C14">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    14
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F14">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    14
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H14">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I14">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C15">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    15
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F15">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    15
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H15">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I15">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C16">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    16
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F16">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    16
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H16">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I16">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C17">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    17
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F17">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    17
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H17">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I17">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C18">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    18
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F18">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    18
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H18">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I18">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C19">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    19
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F19">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    19
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H19">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I19">
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="seat-exit-door">
+                EXIT DOORS
+              </div>
+              <div class="seat-section">
+                <div class="seat-row seat-row-aphabet">
+                  <label class="seat-label">
+                    A
+                  </label>
+                  <label class="seat-label">
+                    B
+                  </label>
+                  <label class="seat-label">
+                    C
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    D
+                  </label>
+                  <label class="seat-label">
+                    E
+                  </label>
+                  <label class="seat-label">
+                    F
+                  </label>
+                  <label class="seat-label"></label>
+                  <label class="seat-label">
+                    G
+                  </label>
+                  <label class="seat-label">
+                    H
+                  </label>
+                  <label class="seat-label">
+                    I
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C20">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    20
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F20">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    20
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H20">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I20">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C21">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    21
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F21">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    21
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H21">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I21">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C22">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    22
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F22">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    22
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H22">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I22">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C23">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    23
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F23">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    23
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H23">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I23">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C24">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    24
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F24">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    24
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H24">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I24">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C25">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    25
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F25">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    25
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H25">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I25">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C26">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    26
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F26">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    26
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H26">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I26">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C27">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    27
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F27">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    27
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H27">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I27">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C28">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    28
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F28">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    28
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H28">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I28">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C29">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    29
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F29">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    29
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H29">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I29">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="A30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C30">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    30
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F30">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    30
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H30">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="I30">
+                    </div>
+                  </label>
+                </div>
+                <div class="seat-row">
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="A31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="B31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="C31">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    31
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="D31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="E31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="F31">
+                    </div>
+                  </label>
+                  <label class="seat-label seat-label--number">
+                    31
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="G31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--normal" data-tooltip="tooltip" title="H31">
+                    </div>
+                  </label>
+                  <label class="seat-label">
+                    <input type="radio" name="selectSeat">
+                    <div class="icon-seat icon-seat--escape" data-tooltip="tooltip" title="I31">
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="seat-exit-door">
+                EXIT DOORS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer no-pt">
+        <div class="modal-footer-extend mb16">
+          <!-- _custom.boxAccordion -->
+          <div class="box-accordion-wrap" data-accordion="data-accordion">
+            <div class="box box-accordion box-border box-select box-line">
+              <div class="box__body cursor-pointer" data-control="data-control">
+                <div class="title p1 up">LE VAN LONG</div>
+                <div class="sub-title">
+                  <span class="color-sub-default">Chỗ ngồi:</span>
+                  Chưa chọn
+                </div>
+              </div>
+              <div class="box__body-accordion" data-content="data-content">
+                <div class="box__body box-no-pv">
+                  <div class="list-line-select list-line-select-sm list-line-select-dash">
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden" checked>
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE VAN LONG
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                Chưa chọn
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE NGUYEN NGOC
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="list-line-select-item select-check-button">
+                      <input type="radio" name="select2" class="hidden">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="row row-16 align-items-center">
+                            <div class="col-md-6">
+                              <div class="h4 title">
+                                <div class="switch-color">
+                                  LE TRAM
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col sub-title color-sub-default">
+                              Chỗ ngồi:
+                              <span class="color-default">
+                                25D
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end _custom.boxAccordion -->
+        </div>
+        <div class="row row-8">
+          <div class="col-auto block-left">
+            <!-- button.btn -->
+            <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Bỏ qua</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+          <div class="col-auto">
+            <!-- button.btn -->
+            <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Xác nhận</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal.modal -->
+<!-- modal.modal -->
+<div class="modal fade modal-type-block" id="modalSelectEscapeSeat" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-size-xs modal-dialog-scrollable modal-escape" role="document">
+    <div class="modal-content text-left">
+      <div class="modal-header">
+        <div class="custom-modal-header">
+          <div class="row h3 row-16">
+            <div class="col">14K - Phổ thông</div>
+            <div class="col-auto">
+              100,000<sup>đ</sup>
+            </div>
+          </div>
+          <div class="row p3">
+            <div class="col">Chỗ ngồi gần cửa thoát hiểm</div>
+            <div class="col-auto">1 hành khách</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" body-scroll-lock-ignore="body-scroll-lock-ignore">
+        <div class="list-mb12 list-last-mb">
+          <div class="color-danger h5">Đây là ghế cửa thoát hiểm</div>
+          <div class="p">
+            Vì lý do an toàn, quý khách chọn ghế cửa thoát hiểm phải đáp ứng các yêu cầu tối thiểu sau đây:
+            <br>• Trong độ tuổi từ 15 đến 60.
+            <br>• Tình trạng khỏe mạnh, không đang mang thai, không đi cùng các hành khách cần sự trợ giúp đặc biệt như trẻ em, người hạn chế di chuyển hoặc mang các hành lý đặc biệt như thú cưng…
+            <br>• Có khả năng nghe, đọc hiểu các hướng dẫn liên quan đến thoát hiểm trong bản in hoặc trong bản hướng dẫn và có khả năng hiểu được khẩu lệnh của thành viên tổ bay.
+            <br>• Không yêu cầu dây an toàn nối dài.
+            <br>• Không có hạn chế nào ảnh hưởng đến việc thực hiện các chức năng hỗ trợ thoát hiểm.
+          </div>
+          <div class="p color-danger">
+            Xin lưu ý: Trong trường hợp tổ bay thấy rằng hành khách ngồi ở ghế gần cửa thoát hiểm không có khả năng thực hiện các chức năng hỗ trợ thoát hiểm, quý khách sẽ được yêu cầu đổi chỗ ngồi khác phù hợp.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row row-8">
+          <div class="col-12">
+            <!-- button.btn -->
+            <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Tôi hiểu và đồng ý với các yêu cầu trên</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal.modal -->
+<!-- ie11polyfills -->
+<script src="js/vendors/ie11polyfills/ie11polyfills.bundles.js"></script>
+<!-- ie11polyfills -->
+<!-- jquery -->
+<script src="js/vendors/jquery/jquery.bundles.js"></script>
+<script src="js/vendors/jquery/jquery.init.js"></script>
+<!-- jquery -->
+<!-- bodyScrollLock -->
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.bundles.js"></script>
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.init.js"></script>
+<!-- bodyScrollLock -->
+<!-- iosInnerHeight -->
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.bundles.js"></script>
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.init.js"></script>
+<!-- iosInnerHeight -->
+<!-- popper -->
+<script src="js/vendors/popper/popper.bundles.js"></script>
+<!-- popper -->
+<!-- bootstrap -->
+<script src="js/vendors/bootstrap/bootstrap.bundles.js"></script>
+<script src="js/vendors/bootstrap/bootstrap.init.js"></script>
+<!-- bootstrap -->
+<!-- jqueryAccordion -->
+<script src="js/vendors/jquery-accordion/jquery-accordion.bundles.js"></script>
+<script src="js/vendors/jquery-accordion/jquery-accordion.init.js"></script>
+<!-- jqueryAccordion -->
+<!-- select2 -->
+<script src="js/vendors/select2/select2.bundles.js"></script>
+<script src="js/vendors/select2/select2.init.js"></script>
+<!-- select2 -->
+<!-- parsley -->
+<script src="js/vendors/parsley/parsley.bundles.js"></script>
+<script src="js/vendors/parsley/parsley.init.js"></script>
+<!-- parsley -->
+<!-- litepicker -->
+<script src="js/vendors/litepicker/litepicker.bundles.js"></script>
+<script src="js/vendors/litepicker/litepicker.init.js"></script>
+<!-- litepicker -->
+<!-- gliderjs -->
+<script src="js/vendors/gliderjs/gliderjs.bundles.js"></script>
+<!-- gliderjs -->
+<!-- cleave -->
+<script src="js/vendors/cleave/cleave.bundles.js"></script>
+<script src="js/vendors/cleave/cleave.init.js"></script>
+<!-- cleave -->
+<!-- autosize -->
+<script src="js/vendors/autosize/autosize.bundles.js"></script>
+<script src="js/vendors/autosize/autosize.init.js"></script>
+<!-- autosize -->
+<!-- script use for this page only -->
+<!-- end script for this page only -->
+<script src="js/custom.js"></script>
+<!-- script use for this page only -->
+<script>
+  $(document).ready(function() {
+    $('#modalSelectSeat').on('shown.bs.modal', function(e) {
+      var top = $('#modalSelectSeat .seat-header').css('padding-top')
+      $('#modalSelectSeat .modal-body').scrollTop(parseInt(top, 10));
+    })
+
+    $('.icon-seat--escape')
+      .parent('.seat-label')
+      .find('input')
+      .on('change', function() {
+        if ($(this).is(':checked')) {
+          $('#modalSelectEscapeSeat').modal('show')
+        }
+      })
+  })
+</script>
+<!-- end script for this page only -->
+
+</html>

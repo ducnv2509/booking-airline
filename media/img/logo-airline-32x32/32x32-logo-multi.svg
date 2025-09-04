@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_8670" data-name="Path 8670" d="M0,0,4.74,13.322H19.47a4.764,4.764,0,0,0-1.427-.583A9.9,9.9,0,0,1,14.09,10.35C13.078,9.338,4.637.666,4.637.666S4.048,0,3.535,0Z" fill="#bfccd9"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_8670-2" data-name="Path 8670" d="M0,0,4.74,13.322H19.47a4.764,4.764,0,0,0-1.427-.583A9.9,9.9,0,0,1,14.09,10.35C13.078,9.338,4.637.666,4.637.666S4.048,0,3.535,0Z" fill="#0071a9"/>
+    </clipPath>
+  </defs>
+  <g id="_32x32-Logo-Multi" data-name="32x32-Logo-Multi" transform="translate(0.5 0.5)">
+    <g id="_32x32-Logo-BA" data-name="32x32-Logo-BA" transform="translate(-8303 -2545)">
+      <rect id="Container32" width="32" height="32" rx="6" transform="translate(8303 2545)" fill="transparent" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <g id="_32x32-Logo-More" data-name="32x32-Logo-More" transform="translate(-112.059 -357.4)">
+      <g id="Group_12279" data-name="Group 12279" transform="translate(121.588 365)">
+        <g id="Group_12277" data-name="Group 12277" clip-path="url(#clip-path)">
+          <rect id="Rectangle_5074" data-name="Rectangle 5074" width="19.47" height="13.322" transform="translate(0 0)" fill="#bfccd9"/>
+        </g>
+      </g>
+      <g id="Group_12280" data-name="Group 12280" transform="translate(117.059 368.448)">
+        <g id="Group_12277-2" data-name="Group 12277" clip-path="url(#clip-path-2)">
+          <rect id="Rectangle_5074-2" data-name="Rectangle 5074" width="19.47" height="13.322" transform="translate(0 0)" fill="#0071a9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

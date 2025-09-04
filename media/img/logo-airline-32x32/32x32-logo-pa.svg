@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.237" y1="1.79" x2="0.235" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#72a4d7"/>
+      <stop offset="1" stop-color="#1a1f4a"/>
+    </linearGradient>
+  </defs>
+  <g id="_32x32-Logo-PA" data-name="32x32-Logo-PA" transform="translate(0.5 0.5)">
+    <rect id="Container32" width="32" height="32" rx="6" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <g id="Pacific_Airlines" data-name="Pacific Airlines" transform="translate(5 4)">
+      <path id="Path_8667" data-name="Path 8667" d="M20.091,0,15.818.091a3.509,3.509,0,0,0-2.273,1.349C12.955,2.2,7.393,8.591,6.091,9.7,4.393,11.121,0,12.773,0,12.773H12.713Z" fill="#f7941d"/>
+      <path id="Path_8668" data-name="Path 8668" d="M.946,19.57l1.8,2.985A2.912,2.912,0,0,0,4.628,23.6c.773.106,7.545,1.424,8.863,1.895a23.059,23.059,0,0,1,4.652,3.045L12.961,19.57Z" transform="translate(-0.219 -4.539)" fill="#fff"/>
+      <path id="Path_8669" data-name="Path 8669" d="M19.016,15.729l5.105,8.848,1.425-2.591a2.4,2.4,0,0,0,.167-.876v-.043a2.566,2.566,0,0,0-.182-.928c-.257-.607-2.167-6.152-2.379-7.319a19.906,19.906,0,0,1,.258-4.712Z" transform="translate(-4.411 -1.881)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

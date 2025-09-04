@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="..\..\." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Flight booking - vietinbank default</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="fonts/main/svn-gilroy.css" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.bundles.css" />
+    <!-- end bootstrap -->
+    <!-- gliderjs -->
+    <link rel="stylesheet" href="css/vendors/gliderjs/gliderjs.bundles.css" />
+    <!-- end gliderjs -->
+    <!-- select2 -->
+    <link rel="stylesheet" href="css/vendors/select2/select2.bundles.css" />
+    <!-- end select2 -->
+    <!-- css use for this page only -->
+    <!-- end css use for this page only -->
+    <!-- css use for this page only -->
+    <!-- end css use for this page only -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.bundles.css" />
+    <link
+      rel="shortcut icon"
+      type="text/html"
+      href="media/favicon/favicon.png"
+    />
+    <script src="../../js/theme.js"></script>
+
+  </head>
+
+  <body class="theme-vietinbank color-theme-default">
+    <!-- _header -->
+    <header class="header-menu">
+      <div class="header-inner">
+        <div class="container">
+          <div class="row row-0 align-items-center">
+            <div class="col header-left">
+              <div class="header-left-wrap">
+                <div class="header-left-inner">
+                  <a href="pages/index.html" class="header-link-item hover-c"
+                    >Đặt vé máy bay</a
+                  >
+                  <a
+                    href="pages/booking-history/booking-history-list.html"
+                    class="header-link-item hover-c"
+                    >Lịch sử đặt vé</a
+                  >
+                  <a
+                    href="pages/payment/payment.html"
+                    class="header-link-item hover-c active"
+                    >Thanh toán vé máy bay</a
+                  >
+                  <a
+                    href="pages/checkin/checkin-1.html"
+                    class="header-link-item hover-c"
+                    >Làm thủ tục</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-auto header-right">
+              <div class="header-right-wrap">
+                <!-- button.btn -->
+                <a
+                  class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active btn-call-header"
+                  href="tel:1900.5555.20"
+                >
+                  <div class="ubtn-full">
+                    <div class="row row-8 ubtn-inner justify-content-center">
+                      <span class="ubtn-ic col-auto">
+                        <img
+                          src="media/icons-color/default/default/24x24-phone.svg"
+                          alt=""
+                          class="ic-default"
+                        />
+                      </span>
+                      <span class="ubtn-text">1900.5555.20</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- end button.btn -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end _header -->
+    <div class="main main-with-header">
+      <div class="main-wrap">
+        <div class="main-inner main-inner-page">
+          <div class="container">
+            <div class="row row-24 justify-content-center">
+              <div class="col-lg-8">
+                <div class="flight-info flight-info-payment">
+                  <div
+                    class="flight-info-block-info flight-info-block list-mb16 list-last-mb"
+                  >
+                    <div class="h2">Thanh toán vé máy bay</div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <div class="p">
+                                Nhập mã thanh toán (bao gồm chữ, số và dấu"/")
+                                để tra cứu thông tin đơn đặt vé
+                              </div>
+                            </div>
+                            <div class="col-md-8">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div
+                                  class="input-group-wrap input-group-default"
+                                >
+                                  <div class="input-group">
+                                    <input
+                                      type="text"
+                                      class="input input-size-default input-default input-label-change input-ic-default input-has-clear"
+                                      autocorrect="off"
+                                      placeholder=""
+                                      value=""
+                                    />
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">Mã thanh toán</div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img
+                                          src="media/icons-color/subdefault/default/24x24-close-circle.svg"
+                                          alt=""
+                                          class="ic-sm"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-sm-auto">
+                                  <!-- button.btn -->
+                                  <a
+                                    id="btn-query-code"
+                                    class="ubtn ubg-primary ubtn-size-default ubtn-min-width-lg ubg-hover ubg-active"
+                                    href="pages/payment/payment-not-paid.html"
+                                  >
+                                    <div class="ubtn-full">
+                                      <div
+                                        class="ubtn-inner justify-content-center"
+                                      >
+                                        <span class="ubtn-text"
+                                          >Truy vấn mã</span
+                                        >
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <!-- end button.btn -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="main-footer">
+          <div class="main-footer-inner">
+            <div class="container">
+              <div class="row row-4 justify-content-center align-items-center">
+                <div class="col-auto">
+                  <a href="" class="block list-item p3">
+                    <div class="txt color-default hover-c">Đặt vé</div>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="" class="block list-item p3">
+                    <div class="txt color-default">|</div>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="" class="block list-item p3">
+                    <div class="txt color-default hover-c">
+                      Điều khoản sử dụng dịch vụ đặt vé
+                    </div>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="" class="block list-item p3">
+                    <div class="txt color-default">|</div>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="" class="block list-item p3">
+                    <div class="txt color-default hover-c">
+                      Biểu phí dịch vụ đặt vé
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <!-- ie11polyfills -->
+  <script src="js/vendors/ie11polyfills/ie11polyfills.bundles.js"></script>
+  <!-- ie11polyfills -->
+  <!-- jquery -->
+  <script src="js/vendors/jquery/jquery.bundles.js"></script>
+  <script src="js/vendors/jquery/jquery.init.js"></script>
+  <!-- jquery -->
+  <!-- bodyScrollLock -->
+  <script src="js/vendors/bodyScrollLock/bodyScrollLock.bundles.js"></script>
+  <script src="js/vendors/bodyScrollLock/bodyScrollLock.init.js"></script>
+  <!-- bodyScrollLock -->
+  <!-- iosInnerHeight -->
+  <script src="js/vendors/iosInnerHeight/iosInnerHeight.bundles.js"></script>
+  <script src="js/vendors/iosInnerHeight/iosInnerHeight.init.js"></script>
+  <!-- iosInnerHeight -->
+  <!-- popper -->
+  <script src="js/vendors/popper/popper.bundles.js"></script>
+  <!-- popper -->
+  <!-- bootstrap -->
+  <script src="js/vendors/bootstrap/bootstrap.bundles.js"></script>
+  <script src="js/vendors/bootstrap/bootstrap.init.js"></script>
+  <!-- bootstrap -->
+  <!-- jqueryAccordion -->
+  <script src="js/vendors/jquery-accordion/jquery-accordion.bundles.js"></script>
+  <script src="js/vendors/jquery-accordion/jquery-accordion.init.js"></script>
+  <!-- jqueryAccordion -->
+  <!-- select2 -->
+  <script src="js/vendors/select2/select2.bundles.js"></script>
+  <script src="js/vendors/select2/select2.init.js"></script>
+  <!-- select2 -->
+  <!-- parsley -->
+  <script src="js/vendors/parsley/parsley.bundles.js"></script>
+  <script src="js/vendors/parsley/parsley.init.js"></script>
+  <!-- parsley -->
+  <!-- litepicker -->
+  <script src="js/vendors/litepicker/litepicker.bundles.js"></script>
+  <script src="js/vendors/litepicker/litepicker.init.js"></script>
+  <!-- litepicker -->
+  <!-- gliderjs -->
+  <script src="js/vendors/gliderjs/gliderjs.bundles.js"></script>
+  <!-- gliderjs -->
+  <!-- cleave -->
+  <script src="js/vendors/cleave/cleave.bundles.js"></script>
+  <script src="js/vendors/cleave/cleave.init.js"></script>
+  <!-- cleave -->
+  <!-- autosize -->
+  <script src="js/vendors/autosize/autosize.bundles.js"></script>
+  <script src="js/vendors/autosize/autosize.init.js"></script>
+  <!-- autosize -->
+  <!-- script use for this page only -->
+  <!-- end script for this page only -->
+  <script src="js/custom.js"></script>
+  <!-- script use for this page only -->
+  <!-- end script for this page only -->
+  <script>
+    (function () {
+      const btn = document.getElementById("btn-query-code");
+      const input = document.getElementById("payment-code");
+
+      if (!btn) return;
+
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const code = ((input && input.value) || "").trim() || "EMPTY";
+
+        // Endpoint giả chắc chắn lỗi (404). Đổi sang đường dẫn backend thật nếu muốn test 500.
+        const url = `${
+          location.origin
+        }/api/payment/lookup?code=${encodeURIComponent(code)}&forceError=1`;
+
+        // KHÔNG catch -> tạo Unhandled Promise Rejection (PostHog sẽ gửi $exception)
+        const p = fetch(url, { headers: { Accept: "application/json" } })
+          .then(async (res) => {
+            // biến mọi mã != 2xx thành lỗi
+            const body = await res.text();
+            if (!res.ok) {
+              throw new Error(
+                `PH_TEST: lookup failed — HTTP ${res.status} ${body.slice(
+                  0,
+                  200
+                )}`
+              );
+            }
+            return JSON.parse(body); // nếu body không phải JSON cũng sẽ throw
+          })
+          .then((data) => {
+            // luồng thành công (không dùng trong test lỗi)
+            console.log("Lookup OK", data);
+          });
+
+        // Cho SDK có thời gian gửi $exception rồi mới điều hướng (nếu bạn muốn)
+        p.finally(() => {
+          setTimeout(() => {
+            window.location.href = "pages/payment/payment-not-paid.html";
+          }, 800);
+        });
+      });
+    })();
+  </script>
+</html>

@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="..\..\.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Flight booking -
+    vietinbank
+    default
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="fonts/main/svn-gilroy.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.bundles.css">
+  <!-- end bootstrap -->
+  <!-- gliderjs -->
+  <link rel="stylesheet" href="css/vendors/gliderjs/gliderjs.bundles.css">
+  <!-- end gliderjs -->
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/vendors/select2/select2.bundles.css">
+  <!-- end select2 -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.bundles.css">
+  <link rel="shortcut icon" type="text/html" href="media/favicon/favicon.png">
+    <script src="../../js/theme.js"></script>
+
+</head>
+
+<body class="theme-vietinbank color-theme-default">
+  <!-- _header -->
+  <header class="header-menu">
+    <div class="header-inner">
+      <div class="container">
+        <div class="row row-0 align-items-center">
+          <div class="col header-left">
+            <div class="header-left-wrap">
+              <div class="header-left-inner">
+                <a href="pages/index.html" class="header-link-item hover-c active">Đặt vé máy bay</a>
+                <a href="pages/booking-history/booking-history-list.html" class="header-link-item hover-c">Lịch sử đặt vé</a>
+                <a href="pages/payment/payment.html" class="header-link-item hover-c">Thanh toán vé máy bay</a>
+                <a href="pages/checkin/checkin-1.html" class="header-link-item hover-c">Làm thủ tục</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto header-right">
+            <div class="header-right-wrap">
+              <!-- button.btn -->
+              <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active btn-call-header" href="tel:1900.5555.20">
+                <div class="ubtn-full">
+                  <div class="row row-8 ubtn-inner justify-content-center">
+                    <span class="ubtn-ic col-auto">
+                      <img src="media/icons-color/default/default/24x24-phone.svg" alt="" class="ic-default">
+                    </span>
+                    <span class="ubtn-text">1900.5555.20</span>
+                  </div>
+                </div>
+              </a>
+              <!-- end button.btn -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end _header -->
+  <div class="main main-with-header">
+    <div class="main-wrap">
+      <div class="main-inner main-inner-page">
+        <div class="steps-wrap">
+          <div class="container">
+            <!-- _custom.steps -->
+            <div class="steps">
+              <div class="steps__wrap row row-0">
+                <div class="col active checked steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">1</div>
+                    </div>
+                    <div class="steps__txt h5">Tìm chuyến bay</div>
+                  </div>
+                </div>
+                <div class="col active steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">2</div>
+                    </div>
+                    <div class="steps__txt h5">Thông tin hành khách</div>
+                  </div>
+                </div>
+                <div class="col steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">3</div>
+                    </div>
+                    <div class="steps__txt h5">Dịch vụ bổ trợ</div>
+                  </div>
+                </div>
+                <div class="col steps__item">
+                  <div class="steps-line"></div>
+                  <div class="step-content">
+                    <div class="steps__circle">
+                      <div class="steps__cirlce-inner">4</div>
+                    </div>
+                    <div class="steps__txt h5">Thanh toán</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end _custom.steps -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-24">
+            <div class="col-xl-8">
+              <div class="flight-info">
+                <div class="list-mb32 list-last-mb">
+                  <div class="flight-info-block-flight flight-info-block list-mb16 list-last-mb">
+                    <div class="h2">
+                      Thông tin chuyến bay
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="list-mb24 list-last-mb" data-accordion-group="data-accordion-group">
+                          <!-- _flight.flightItemPicked -->
+                          <div class="flight-list-picked-title">
+                            <div class="row row-8 align-items-center">
+                              <div class="col-auto h4">
+                                Chuyến bay chiều đi:
+                              </div>
+                              <div class="col h4">
+                                HAN - SGN
+                              </div>
+                            </div>
+                          </div>
+                          <!-- _flight.flightItem -->
+                          <div class="flight-item flight-item-picked" data-accordion="data-accordion">
+                            <div class="flight-item-main">
+                              <div class="flight-item-info">
+                                <div class="row row-16 align-items-center flight-item-brand">
+                                  <div class="col-auto flight-item-brand-icon">
+                                    <!-- util.iconBgBox -->
+                                    <div class="icon circle-lg circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                    <!-- end util.iconBgBox -->
+                                  </div>
+                                  <div class="col-md-4 col flight-item-brand-text">
+                                    <div class="row">
+                                      <div class="col-md-12 col">
+                                        <div class="h3">Vietnam Airlines</div>
+                                      </div>
+                                      <div class="col-md-12 col-auto">
+                                        <div class="flight-item-leg p3 mt4">1 điểm dừng</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 flight-item-line-dashed d-block d-md-none">
+                                    <hr class="line-dashed">
+                                  </div>
+                                  <div class="col flight-item-time-minimal">
+                                    <div class="h3">19:00- 10:05
+                                      <sup class="color-danger flight-overdue-date" data-tooltip="tooltip" title="Ngày hôm sau">+1</sup>
+                                    </div>
+                                    <div class="p3">16 thg 12- 17 thg 12</div>
+                                  </div>
+                                  <div class="col-auto flight-item-arrow-button">
+                                    <!-- _custom.buttonArrow -->
+                                    <!-- button.btn -->
+                                    <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active accordion-arrow" data-control>
+                                      <div class="ubtn-full">
+                                        <img src="media/icons-color/default/default/24x24-chevrondown.svg" alt="" class="ic-default">
+                                      </div>
+                                    </button>
+                                    <!-- end button.btn -->
+                                    <!-- end _custom.buttonArrow -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flight-item-detail" data-content="data-content">
+                              <div>
+                                <div class="flight-item-detail-title h4 mb8">
+                                  Chi tiết chuyến bay
+                                </div>
+                                <div class="flight-item-detail-trips">
+                                  <!-- _flight.flightRoute -->
+                                  <div class="flight-trips-route flight-trips-route-start">
+                                    <div class="row row-16 flight-route-from">
+                                      <div class="col-auto flight-route-date color-sub-default">
+                                        16 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-dot-solid"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4 color-info">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            12:35
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            HAN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        Hà Nội, Việt Nam
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-flight">
+                                      <div class="col-auto flight-route-brand-icon">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-md-auto col flight-route-icon">
+                                        <div class="icon icon-airplain-down-sub-default"></div>
+                                      </div>
+                                      <div class="col flight-route-brand-info color-sub-default p3">
+                                        Vietnam Airlines
+                                        -VN6025
+                                        <br>
+                                        2 giờ 25 phút
+                                      </div>
+                                      <div class="col-md flight-route-brand-tag">
+                                        <div class="inline-block">
+                                          <!-- util.tag -->
+                                          <div class="tag ubg-invert tag-size-default">
+                                            <div class="tag-title p3 weight5 color-sub-default">
+                                              Airbus A320-100/200
+                                            </div>
+                                          </div>
+                                          <!-- end util.tag -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-to">
+                                      <div class="col-auto flight-route-date color-sub-default">
+                                        16 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-dot-sub-default"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            17:15
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            SIN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        Singapore, Singapore
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end _flight.flightRoute -->
+                                  <!-- _flight.flightRoute -->
+                                  <div class="flight-trips-route flight-trips-route-stop">
+                                    <div class="row row-16 flight-route-from">
+                                      <div class="col-auto flight-route-date color-sub-default"></div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-clock"></div>
+                                      </div>
+                                      <div class="col-md col-12 flight-route-stop-text color-sub-default">
+                                        Quá cảnh 14g 50p tại Singapore (SIN)
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end _flight.flightRoute -->
+                                  <!-- _flight.flightRoute -->
+                                  <div class="flight-trips-route flight-trips-route-end">
+                                    <div class="row row-16 flight-route-from">
+                                      <div class="col-auto flight-route-date color-sub-default color-danger">
+                                        17 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-dot-sub-default"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            08:05
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            HAN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        Hà Nội, Việt Nam
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-flight">
+                                      <div class="col-auto flight-route-brand-icon">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-md-auto col flight-route-icon">
+                                        <div class="icon icon-airplain-down-sub-default"></div>
+                                      </div>
+                                      <div class="col flight-route-brand-info color-sub-default p3">
+                                        Vietnam Airlines
+                                        -VN6025
+                                        <br>
+                                        2 giờ 25 phút
+                                      </div>
+                                      <div class="col-md flight-route-brand-tag">
+                                        <div class="inline-block">
+                                          <!-- util.tag -->
+                                          <div class="tag ubg-invert tag-size-default">
+                                            <div class="tag-title p3 weight5 color-sub-default">
+                                              Boeing 777-400
+                                            </div>
+                                          </div>
+                                          <!-- end util.tag -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-to">
+                                      <div class="col-auto flight-route-date color-sub-default">
+                                        17 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-location"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4 color-info">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            15:35
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            SGN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        TP. Hồ Chí Minh, Việt Nam
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end _flight.flightRoute -->
+                                </div>
+                                <div class="flight-item-detail-info mt16">
+                                  <div class="row">
+                                    <div class="col-auto">
+                                      <!-- util.linkIcon -->
+                                      <button data-toggle="modal" data-target="#modalPolicy" class="ubtn ubtn-size-sm link-icon h5">
+                                        <div class="ubtn-full">
+                                          <div class="row row-4 align-items-center ubtn-inner">
+                                            <div class="ubtn-ic col-auto"><img src="media/icons-color/default/default/24x24-information-circle.svg" alt="" class="ic-sm"></div>
+                                            <div class="ubtn-text">Chính sách</div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <!-- end util.linkIcon -->
+                                    </div>
+                                    <div class="col-auto">
+                                      <!-- util.linkIcon -->
+                                      <button data-toggle="modal" data-target="#modalBaggage" class="ubtn ubtn-size-sm link-icon h5">
+                                        <div class="ubtn-full">
+                                          <div class="row row-4 align-items-center ubtn-inner">
+                                            <div class="ubtn-ic col-auto"><img src="media/icons-color/default/default/24x24-baggageset.svg" alt="" class="ic-sm"></div>
+                                            <div class="ubtn-text">Thông tin hành lý</div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <!-- end util.linkIcon -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end _flight.flightItem -->
+                          <!-- end _flight.flightItemPicked -->
+                          <!-- _flight.flightItemPicked -->
+                          <div class="flight-list-picked-title">
+                            <div class="row row-8 align-items-center">
+                              <div class="col-auto h4">
+                                Chuyến bay chiều về:
+                              </div>
+                              <div class="col h4">
+                                SGN - HAN
+                              </div>
+                            </div>
+                          </div>
+                          <!-- _flight.flightItem -->
+                          <div class="flight-item flight-item-picked" data-accordion="data-accordion">
+                            <div class="flight-item-main">
+                              <div class="flight-item-info">
+                                <div class="row row-16 align-items-center flight-item-brand">
+                                  <div class="col-auto flight-item-brand-icon">
+                                    <!-- util.iconBgBox -->
+                                    <div class="icon circle-lg circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-pa.svg);"></div>
+                                    <!-- end util.iconBgBox -->
+                                  </div>
+                                  <div class="col-md-4 col flight-item-brand-text">
+                                    <div class="row">
+                                      <div class="col-md-12 col">
+                                        <div class="h3">Pacific Airlines</div>
+                                      </div>
+                                      <div class="col-md-12 col-auto">
+                                        <div class="flight-item-leg p3 mt4">Bay thẳng</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 flight-item-line-dashed d-block d-md-none">
+                                    <hr class="line-dashed">
+                                  </div>
+                                  <div class="col flight-item-time-minimal">
+                                    <div class="h3">19:00- 10:05
+                                      <sup class="color-danger flight-overdue-date" data-tooltip="tooltip" title="Ngày hôm sau">+1</sup>
+                                    </div>
+                                    <div class="p3">16 thg 12- 17 thg 12</div>
+                                  </div>
+                                  <div class="col-auto flight-item-arrow-button">
+                                    <!-- _custom.buttonArrow -->
+                                    <!-- button.btn -->
+                                    <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active accordion-arrow" data-control>
+                                      <div class="ubtn-full">
+                                        <img src="media/icons-color/default/default/24x24-chevrondown.svg" alt="" class="ic-default">
+                                      </div>
+                                    </button>
+                                    <!-- end button.btn -->
+                                    <!-- end _custom.buttonArrow -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flight-item-detail" data-content="data-content">
+                              <div>
+                                <div class="flight-item-detail-title h4 mb8">
+                                  Chi tiết chuyến bay
+                                </div>
+                                <div class="flight-item-detail-trips">
+                                  <!-- _flight.flightRoute -->
+                                  <div class="flight-trips-route flight-trips-route-start">
+                                    <div class="row row-16 flight-route-from">
+                                      <div class="col-auto flight-route-date color-sub-default">
+                                        20 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-dot-solid"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4 color-info">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            12:35
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            SGN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        TP. Hồ Chí Minh, Việt Nam
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-flight">
+                                      <div class="col-auto flight-route-brand-icon">
+                                        <!-- util.iconBgBox -->
+                                        <div class="icon circle-md circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-pa.svg);"></div>
+                                        <!-- end util.iconBgBox -->
+                                      </div>
+                                      <div class="col-md-auto col flight-route-icon">
+                                        <div class="icon icon-airplain-down-sub-default"></div>
+                                      </div>
+                                      <div class="col flight-route-brand-info color-sub-default p3">
+                                        Pacific Airlines
+                                        -VN6025
+                                        <br>
+                                        2 giờ 25 phút
+                                      </div>
+                                      <div class="col-md flight-route-brand-tag">
+                                        <div class="inline-block">
+                                          <!-- util.tag -->
+                                          <div class="tag ubg-invert tag-size-default">
+                                            <div class="tag-title p3 weight5 color-sub-default">
+                                              Airbus A320-100/200
+                                            </div>
+                                          </div>
+                                          <!-- end util.tag -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row row-16 flight-route-to">
+                                      <div class="col-auto flight-route-date color-sub-default">
+                                        21 thg 12
+                                      </div>
+                                      <div class="col-auto flight-route-icon">
+                                        <div class="icon icon-location"></div>
+                                      </div>
+                                      <div class="col-md flight-route-time-and-code h4">
+                                        <div class="row row-8">
+                                          <div class="col-auto flight-route-time">
+                                            17:15
+                                          </div>
+                                          <div class="col-md-auto col flight-route-code">
+                                            HAN
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col flight-route-location color-sub-default">
+                                        Hà Nội, Việt Nam
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end _flight.flightRoute -->
+                                </div>
+                                <div class="flight-item-detail-info mt16">
+                                  <div class="row">
+                                    <div class="col-auto">
+                                      <!-- util.linkIcon -->
+                                      <button data-toggle="modal" data-target="#modalPolicy" class="ubtn ubtn-size-sm link-icon h5">
+                                        <div class="ubtn-full">
+                                          <div class="row row-4 align-items-center ubtn-inner">
+                                            <div class="ubtn-ic col-auto"><img src="media/icons-color/default/default/24x24-information-circle.svg" alt="" class="ic-sm"></div>
+                                            <div class="ubtn-text">Chính sách</div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <!-- end util.linkIcon -->
+                                    </div>
+                                    <div class="col-auto">
+                                      <!-- util.linkIcon -->
+                                      <button data-toggle="modal" data-target="#modalBaggage" class="ubtn ubtn-size-sm link-icon h5">
+                                        <div class="ubtn-full">
+                                          <div class="row row-4 align-items-center ubtn-inner">
+                                            <div class="ubtn-ic col-auto"><img src="media/icons-color/default/default/24x24-baggageset.svg" alt="" class="ic-sm"></div>
+                                            <div class="ubtn-text">Thông tin hành lý</div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <!-- end util.linkIcon -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end _flight.flightItem -->
+                          <!-- end _flight.flightItemPicked -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flight-info-block-contact flight-info-block list-mb16 list-last-mb">
+                    <div class="h2">
+                      Thông tin liên hệ
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <div class="form-note">Vui lòng nhập thông tin chính xác thông tin liên hệ, thông tin này sẽ dùng để nhận xác nhận đặt chỗ hoặc thay đổi lịch bay</div>
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputName -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: Nguyen Van A" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Họ Đệm và Tên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                      <div class="input-ic">
+                                        <!-- button.btn -->
+                                        <a class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectContact" data-tooltip="tooltip" title='Danh bạ'>
+                                          <div class="ubtn-full">
+                                            <img src="media/icons-color/default/default/24x24-contact.svg" alt="" class="ic-default">
+                                          </div>
+                                        </a>
+                                        <!-- end button.btn -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputName -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.selectGender -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 input input-size-default input-ic-default input-default input-label-change" header-text="Giới tính" data-minimum-results-for-search="Infinity" data-placeholder="Chọn giới tính">
+                                      <option value=""></option>
+                                      <option>Nam</option>
+                                      <option>Nữ</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Giới tính
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectGender -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputEmail -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: email@email.com" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Email
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputEmail -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputPhone -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: 0987654321" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Điện thoại di động
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputPhone -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- rnc.checkbox -->
+                              <div class="form-group">
+                                <label class="checkbox color-default">
+                                  <input type="checkbox" class="hidden" name="" checked value="">
+                                  <div class="rnc-ic-wrap align-items-start">
+                                    <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                  </div>
+                                  <span class="radio-text">
+                                    <div class="txt-main">Dùng làm thông tin hành khách bay</div>
+                                  </span>
+                                </label>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end rnc.checkbox -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flight-info-block-customer flight-info-block list-mb16 list-last-mb">
+                    <div class="h2">
+                      Thông tin hành khách bay
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Người lớn 1
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                Từ 12 tuổi trở lên
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <div class="form-note">Vui lòng nhập đầy đủ, chính xác thứ tự Họ-đệm-tên trên giấy tờ tuỳ thân: CMND/CCCD/Hộ chiếu</div>
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputName -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: Nguyen Van A" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Họ Đệm và Tên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                      <div class="input-ic">
+                                        <!-- button.btn -->
+                                        <a class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectPassenger" data-tooltip="tooltip" title='Danh bạ'>
+                                          <div class="ubtn-full">
+                                            <img src="media/icons-color/default/default/24x24-contact.svg" alt="" class="ic-default">
+                                          </div>
+                                        </a>
+                                        <!-- end button.btn -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputName -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.selectGender -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 input input-size-default input-ic-default input-default input-label-change" header-text="Giới tính" data-minimum-results-for-search="Infinity" data-placeholder="Chọn giới tính">
+                                      <option value=""></option>
+                                      <option>Nam</option>
+                                      <option>Nữ</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Giới tính
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectGender -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box__body flight-from-regular-customer list-mb24 list-last-mb">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Thẻ khách hàng thường xuyên
+                                1
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                <div class="link u">Xóa thẻ này</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-sm-6">
+                              <!-- _custom.selectFlight -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 select-2-template input input-size-default input-ic-default input-default input-label-change placeholder-icon placeholder-icon-airline-default" header-text="Hãng hàng không" data-minimum-results-for-search="Infinity" data-placeholder="Chọn hãng">
+                                      <option value=""></option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-vna.svg" datasub="">Vietnam Airlines</option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-pa.svg" datasub="">Pacific Airlines</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Hãng hàng không
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectFlight -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="Điền số thẻ" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Số thẻ khách hàng thường xuyên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form form-vertical">
+                          <div class="row">
+                            <div class="col-auto">
+                              <!-- button.btn -->
+                              <button class="ubtn ubg-sub-primary ubtn-size-default ubg-hover ubg-active">
+                                <div class="ubtn-full">
+                                  <div class="row row-8 ubtn-inner justify-content-center">
+                                    <span class="ubtn-ic col-auto">
+                                      <img src="media/icons-color/primary/default/24x24-plus-circle.svg" alt="" class="ic-default">
+                                    </span>
+                                    <span class="ubtn-text">Thẻ khách hàng thường xuyên</span>
+                                  </div>
+                                </div>
+                              </button>
+                              <!-- end button.btn -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Trẻ em 1
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                2 đến dưới 12 tuổi
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <div class="form-note">Vui lòng nhập đầy đủ, chính xác thứ tự Họ-đệm-tên trên giấy tờ tuỳ thân: Giấy khai sinh/ Hộ chiếu</div>
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputName -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: Nguyen Van A" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Họ Đệm và Tên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                      <div class="input-ic">
+                                        <!-- button.btn -->
+                                        <a class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectPassenger" data-tooltip="tooltip" title='Danh bạ'>
+                                          <div class="ubtn-full">
+                                            <img src="media/icons-color/default/default/24x24-contact.svg" alt="" class="ic-default">
+                                          </div>
+                                        </a>
+                                        <!-- end button.btn -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputName -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.selectGender -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 input input-size-default input-ic-default input-default input-label-change" header-text="Giới tính" data-minimum-results-for-search="Infinity" data-placeholder="Chọn giới tính">
+                                      <option value=""></option>
+                                      <option>Nam</option>
+                                      <option>Nữ</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Giới tính
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectGender -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box__body flight-from-regular-customer list-mb24 list-last-mb">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Thẻ khách hàng thường xuyên
+                                1
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                <div class="link u">Xóa thẻ này</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-sm-6">
+                              <!-- _custom.selectFlight -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 select-2-template input input-size-default input-ic-default input-default input-label-change placeholder-icon placeholder-icon-airline-default" header-text="Hãng hàng không" data-minimum-results-for-search="Infinity" data-placeholder="Chọn hãng">
+                                      <option value=""></option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-vna.svg" datasub="">Vietnam Airlines</option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-pa.svg" datasub="">Pacific Airlines</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Hãng hàng không
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectFlight -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="Điền số thẻ" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Số thẻ khách hàng thường xuyên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Thẻ khách hàng thường xuyên
+                                2
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                <div class="link u">Xóa thẻ này</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-sm-6">
+                              <!-- _custom.selectFlight -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 select-2-template input input-size-default input-ic-default input-default input-label-change placeholder-icon placeholder-icon-airline-default" header-text="Hãng hàng không" data-minimum-results-for-search="Infinity" data-placeholder="Chọn hãng">
+                                      <option value=""></option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-vna.svg" datasub="">Vietnam Airlines</option>
+                                      <option dataimgclass="ubtn-circle-size-xs ubtn-square" dataimg="media/img/logo-airline-32x32/32x32-logo-pa.svg" datasub="">Pacific Airlines</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Hãng hàng không
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectFlight -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="Điền số thẻ" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Số thẻ khách hàng thường xuyên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Em bé 1
+                              </div>
+                              <div class="col-auto h4 color-sub-default">
+                                2 đến dưới 12 tuổi
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <div class="form-note">Vui lòng nhập đầy đủ, chính xác thứ tự Họ-đệm-tên trên giấy tờ tuỳ thân: Giấy khai sinh/ Hộ chiếu</div>
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.inputName -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="VD: Nguyen Van A" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Họ Đệm và Tên
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                      <div class="input-ic">
+                                        <!-- button.btn -->
+                                        <a class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectPassenger" data-tooltip="tooltip" title='Danh bạ'>
+                                          <div class="ubtn-full">
+                                            <img src="media/icons-color/default/default/24x24-contact.svg" alt="" class="ic-default">
+                                          </div>
+                                        </a>
+                                        <!-- end button.btn -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.inputName -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.selectGender -->
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 input input-size-default input-ic-default input-default input-label-change" header-text="Giới tính" data-minimum-results-for-search="Infinity" data-placeholder="Chọn giới tính">
+                                      <option value=""></option>
+                                      <option>Nam</option>
+                                      <option>Nữ</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Giới tính
+                                    </div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                              <!-- end _custom.selectGender -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- _custom.datepickerBirth -->
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear cleave-birthday" autocorrect="off" placeholder="_ _ /_ _ /_ _ _ _" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      <span class="color-danger">*</span>
+                                      Ngày sinh
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="note-text p3 color-sub-default">
+                                  VD: 30/12/1999
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                              <!-- end _custom.datepickerBirth -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flight-info-block-bill flight-info-block list-mb16 list-last-mb">
+                    <div class="h2">
+                      Thông tin xuất hóa đơn
+                    </div>
+                    <div class="box box-border box-full-mb">
+                      <div class="box__body">
+                        <div class="form form-vertical">
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-sm-12">
+                              <!-- rnc.checkbox -->
+                              <div class="form-group">
+                                <label class="checkbox color-default chekcbox-show-hide">
+                                  <input type="checkbox" class="hidden" name="" value="" id="for-section1">
+                                  <div class="rnc-ic-wrap align-items-center">
+                                    <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                  </div>
+                                  <span class="radio-text">
+                                    <div class="txt-main">Xuất hóa đơn</div>
+                                  </span>
+                                </label>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end rnc.checkbox -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box__body section-hide" id="section1">
+                        <div class="form form-vertical">
+                          <div class="form-title mb16">
+                            <div class="row">
+                              <div class="col h3">
+                                Thông tin xuất hóa đơn
+                              </div>
+                              <div class="col-12">
+                                Quý khách vui lòng cung cấp thông tin chính xác để xuất hóa đơn
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-24 list-mb24 list-crop">
+                            <div class="col-12">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <textarea spellcheck="false" type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear textarea-autosize" autocorrect="off" placeholder="Nhập tên công ty" rows="1">Công ty cổ phần giải pháp thanh toán Việt Nam - VNPAY</textarea>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Tên công ty
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic">
+                                        <!-- button.btn -->
+                                        <a class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-toggle="modal" data-target="#modalSelectCompany" data-tooltip="tooltip" title='Danh bạ'>
+                                          <div class="ubtn-full">
+                                            <img src="media/icons-color/default/default/24x24-contact-global.svg" alt="" class="ic-default">
+                                          </div>
+                                        </a>
+                                        <!-- end button.btn -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                            <div class="col-12">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <textarea spellcheck="false" type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear textarea-autosize" autocorrect="off" placeholder="Nhập địa chỉ công ty" rows="1"></textarea>
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Địa chỉ công ty
+                                    </div>
+                                    <div class="input-flex-content">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="Nhập mã số thuế" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Mã số thuế
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                            <div class="col-sm-6">
+                              <!-- forms.input -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear" autocorrect="off" placeholder="Nhập email nhận hóa đơn" value="">
+                                    <div class="input-frame"></div>
+                                    <div class="input-label">
+                                      Email nhận hóa đơn
+                                    </div>
+                                    <div class="input-flex-content">
+                                      <div class="input-ic input-clear pointer">
+                                        <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.input -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- _custom.formBtnGroup -->
+              <div class="form-btn-group">
+                <div class="row row-8 list-mb8 list-crop">
+                  <div class="">
+                    <!-- button.btn -->
+                    <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" href="pages/booking/flight-list-to.html">
+                      <div class="ubtn-full">
+                        <div class="row row-8 ubtn-inner justify-content-center">
+                          <span class="ubtn-ic col-auto">
+                            <img src="media/icons-color/subdefault/default/24x24-chevronleft.svg" alt="" class="ic-default">
+                          </span>
+                          <span class="ubtn-text">Quay lại</span>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- end button.btn -->
+                  </div>
+                  <div class="block-right">
+                    <!-- button.btn -->
+                    <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" href="pages/booking/customer-info-2.html">
+                      <div class="ubtn-full">
+                        <div class="row row-8 ubtn-inner justify-content-center">
+                          <span class="ubtn-text">Tiếp tục</span>
+                          <span class="ubtn-ic col-auto">
+                            <img src="media/icons-color/invert/default/24x24-chevronright.svg" alt="" class="ic-default">
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- end button.btn -->
+                  </div>
+                </div>
+              </div>
+              <!-- end _custom.formBtnGroup -->
+              <!-- _flight.flightBottom -->
+              <div class="flight-bottom-mobile-sticky flight-bottom-mobile-sticky-price-info d-flex d-xl-none" data-accordion="data-accordion">
+                <div class="flight-bottom-mobile-sticky-header" data-control="data-control">
+                  <div class="row row-16 align-items-center">
+                    <div class="col">
+                      <div class="row row-16 align-items-center">
+                        <div class="col-md-auto">
+                          <div class="row row-4">
+                            <div class="col-auto h4">
+                              HAN
+                            </div>
+                            <div class="col-auto h4">
+                              <img src="media/icons-color/default/default/24x24-flightsreturn.svg" alt="" class="ic-sm">
+                            </div>
+                            <div class="col-auto h4">
+                              SGN
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col p3 color-sub-default">
+                          T4, 16 thg 12 -T7, 19 thg 12
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-auto col">
+                      <div class="row row-8 align-items-center justify-content-end">
+                        <div class="col-auto h3 color-primary order-md-1">
+                          37,251,000đ
+                        </div>
+                        <div class="col-auto h3 color-primary order-md-2">
+                          <img src="media/icons-color/default/default/24x24-chevronup.svg" alt="" class="ic-sm">
+                        </div>
+                        <div class="col-md-auto p3 text-right">
+                          Tổng tiền vé
+                          <span class="color-sub-default">(gồm thuế phí)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flight-bottom-mobile-sticky-body" data-content="data-content">
+                  <div>
+                    <div class="h3 mb16">
+                      Chi tiết giá vé
+                    </div>
+                    <!-- _flight.flightPriceDetail -->
+                    <div class="flight-item-price-detail">
+                      <ul class="flight-item-price-detail-section">
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              <div class="inline-block pr4">2x</div>Vé Người lớn
+                            </div>
+                            <div class="col-auto weight5">
+                              19,970,000đ
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              Tổng thuế và phí
+                            </div>
+                            <div class="col-auto weight5">
+                              19,970,000đ
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              Tổng phí đại lý
+                            </div>
+                            <div class="col-auto weight5">
+                              5,810,000đ
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="flight-item-price-detail-section">
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              <div class="inline-block pr4">1x</div>Vé Trẻ em
+                            </div>
+                            <div class="col-auto weight5">
+                              7,501,000đ
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              Tổng thuế và phí
+                            </div>
+                            <div class="col-auto weight5">
+                              2,590,000đ
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row">
+                            <div class="col">
+                              Tổng phí đại lý
+                            </div>
+                            <div class="col-auto weight5">
+                              2,590,000đ
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end _flight.flightPriceDetail -->
+                  </div>
+                </div>
+              </div>
+              <div class="flight-bottom-mobile-sticky-overlay"></div>
+              <!-- end _flight.flightBottom -->
+            </div>
+            <div class="col-xl-4 d-none d-xl-block">
+              <!-- _flight.flightSidebar -->
+              <div class="flight-sidebar-sticky list-mb16 list-last-mb">
+                <div class="h2">
+                  &nbsp;
+                </div>
+                <div class="box flight-sidebar-info">
+                  <div class="box__body">
+                    <div class="row row-8 align-items-center">
+                      <div class="col text-truncate">
+                        <div class="h4 text-truncate">
+                          Hà Nội
+                        </div>
+                        <div class="h1">
+                          HAN
+                        </div>
+                        <div class="p color-sub-default">
+                          20:10 -16 thg 12
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon">
+                          <img src="media/icons-color/default/default/24x24-flightsreturn.svg" alt="" class="ic-lg">
+                        </div>
+                      </div>
+                      <div class="col text-right text-truncate">
+                        <div class="h4 text-truncate">
+                          TP. Hồ Chí Minh
+                        </div>
+                        <div class="h1">
+                          SGN
+                        </div>
+                        <div class="p color-sub-default">
+                          08:40- 17 thg 12
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box flight-sidebar-price">
+                  <div class="box__body">
+                    <!-- _flight.flightPriceDetailAccordion -->
+                    <!-- _custom.accordionSimple -->
+                    <div class="accordion-simple open-init open" data-accordion="data-accordion">
+                      <div class="accordion-simple-header">
+                        <div class="row row-16 align-items-center">
+                          <div class="col">
+                            <div class="h3">
+                              Chi tiết giá vé
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <!-- button.btn -->
+                            <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-control>
+                              <div class="ubtn-full">
+                                <img src="media/icons-color/default/default/24x24-showless.svg" alt="" class="ic-default">
+                              </div>
+                            </button>
+                            <!-- end button.btn -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-simple-body" data-content="data-content">
+                        <div>
+                          <!-- _flight.flightPriceDetail -->
+                          <div class="flight-item-price-detail">
+                            <ul class="flight-item-price-detail-section">
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="inline-block pr4">2x</div>Vé Người lớn
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    19,970,000đ
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    Tổng thuế và phí
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    19,970,000đ
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    Tổng phí đại lý
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    5,810,000đ
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <ul class="flight-item-price-detail-section">
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="inline-block pr4">1x</div>Vé Trẻ em
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    7,501,000đ
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    Tổng thuế và phí
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    2,590,000đ
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row">
+                                  <div class="col">
+                                    Tổng phí đại lý
+                                  </div>
+                                  <div class="col-auto weight5">
+                                    2,590,000đ
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- end _flight.flightPriceDetail -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end _custom.accordionSimple -->
+                    <!-- end _flight.flightPriceDetailAccordion -->
+                    <div class="flight-price-footer">
+                      <div class="row row-16 align-items-center">
+                        <div class="col">
+                          <div class="h4">
+                            Tổng tiền (Gồm thuế phí)
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="h3 color-primary">
+                            37,251,000đ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end _flight.flightSidebar -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="main-footer-inner">
+          <div class="container">
+            <div class="row row-4 justify-content-center align-items-center">
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Điều khoản sử dụng dịch vụ đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Biểu phí dịch vụ đặt vé</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<!-- _custom.modalSelect -->
+<!-- modal.modal -->
+<div class="modal fade modal-type-block" id="modalSelectContact" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-size-default modal-dialog-scrollable" role="document">
+    <div class="modal-content text-left">
+      <div class="modal-header">
+        <div class="modal-wrap">
+          <div class="row row-20 modal-title">
+            <div class="col">
+              <div class="h2">
+                Danh bạ người liên hệ
+              </div>
+            </div>
+          </div>
+          <div class="modal-close-btn">
+            <!-- button.btn -->
+            <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+              </div>
+            </button>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" body-scroll-lock-ignore="body-scroll-lock-ignore">
+        <div class="list-select list-mb16 list-last-mb">
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN A
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    anguyenvan@gmail.com<br>0912345678
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectContact" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN A
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    bnguyenthi@gmail.com<br>0912345678
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectContact" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN C
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    bnguyenthi@gmail.com<br>0912345678
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectContact" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row row-8">
+          <div class="col-auto block-left">
+            <!-- button.btn -->
+            <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Đóng</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+          <div class="col-auto">
+            <!-- button.btn -->
+            <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Xác nhận</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal.modal -->
+<!-- end _custom.modalSelect -->
+<!-- _custom.modalSelect -->
+<!-- modal.modal -->
+<div class="modal fade modal-type-block" id="modalSelectCompany" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-size-default modal-dialog-scrollable" role="document">
+    <div class="modal-content text-left">
+      <div class="modal-header">
+        <div class="modal-wrap">
+          <div class="row row-20 modal-title">
+            <div class="col">
+              <div class="h2">
+                Danh sách công ty
+              </div>
+            </div>
+          </div>
+          <div class="modal-close-btn">
+            <!-- button.btn -->
+            <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+              </div>
+            </button>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" body-scroll-lock-ignore="body-scroll-lock-ignore">
+        <div class="list-select list-mb16 list-last-mb">
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    Công ty Cổ phần Thanh toán Việt Nam - VNPAY
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectCompany" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    Công ty Cổ phần Thanh toán Việt Nam - VNPAY
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectCompany" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col">
+                  <div class="h3 title">
+                    Công ty Cổ phần Thanh toán Việt Nam - VNPAY
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectCompany" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row row-8">
+          <div class="col-auto block-left">
+            <!-- button.btn -->
+            <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Đóng</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+          <div class="col-auto">
+            <!-- button.btn -->
+            <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Xác nhận</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal.modal -->
+<!-- end _custom.modalSelect -->
+<!-- _custom.modalSelect -->
+<!-- modal.modal -->
+<div class="modal fade modal-type-block" id="modalSelectPassenger" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-size-default modal-dialog-scrollable" role="document">
+    <div class="modal-content text-left">
+      <div class="modal-header">
+        <div class="modal-wrap">
+          <div class="row row-20 modal-title">
+            <div class="col">
+              <div class="h2">
+                Danh bạ hành khách
+              </div>
+            </div>
+          </div>
+          <div class="modal-close-btn">
+            <!-- button.btn -->
+            <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+              </div>
+            </button>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" body-scroll-lock-ignore="body-scroll-lock-ignore">
+        <div class="list-select list-mb16 list-last-mb">
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col-auto d-none d-md-block align-self-start">
+                  <div class="icon">
+                    <img src="media/icons-color/default/default/24x24-genderman.svg" alt="" class="ic-default">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN A
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    Nam<br>
+                    11/02/1996
+                    -
+                    Người lớn
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectPassenger" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col-auto d-none d-md-block align-self-start">
+                  <div class="icon">
+                    <img src="media/icons-color/default/default/24x24-genderwoman.svg" alt="" class="ic-default">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN B
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    Nữ<br>
+                    11/02/1997
+                    -
+                    Người lớn
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectPassenger" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col-auto d-none d-md-block align-self-start">
+                  <div class="icon">
+                    <img src="media/icons-color/default/default/24x24-child.svg" alt="" class="ic-default">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN C
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    Nam<br>
+                    11/02/2008
+                    -
+                    Trẻ em
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectPassenger" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-select">
+            <div class="box__body">
+              <div class="row row-8 align-items-center">
+                <div class="col-auto d-none d-md-block align-self-start">
+                  <div class="icon">
+                    <img src="media/icons-color/default/default/24x24-infant.svg" alt="" class="ic-default">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="h3 title">
+                    NGUYEN VAN D
+                  </div>
+                  <div class="sub-title color-sub-default">
+                    Nam<br>
+                    11/02/2020
+                    -
+                    Em bé
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <input type="radio" name="selectmodalSelectPassenger" class="hidden">
+                    <div class="checked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-sub-primary ubtn-size-xs ubtn-rounded ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="row row-4 ubtn-inner justify-content-center">
+                            <span class="ubtn-ic col-auto">
+                              <img src="media/icons-color/primary/default/24x24-check.svg" alt="" class="ic-default">
+                            </span>
+                            <span class="ubtn-text">Đã chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                    <div class="unchecked">
+                      <!-- button.btn -->
+                      <div class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Chọn</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end button.btn -->
+                    </div>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <label class="select-check-button">
+                    <!-- button.btn -->
+                    <button class="ubtn ubg-sub-danger ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" data-tooltip="tooltip" title='Xoá'>
+                      <div class="ubtn-full">
+                        <img src="media/icons-color/danger/default/24x24-remove.svg" alt="" class="ic-sm">
+                      </div>
+                    </button>
+                    <!-- end button.btn -->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row row-8">
+          <div class="col-auto block-left">
+            <!-- button.btn -->
+            <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Đóng</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+          <div class="col-auto">
+            <!-- button.btn -->
+            <a class="ubtn ubg-primary ubtn-size-default ubg-hover ubg-active" data-dismiss="modal">
+              <div class="ubtn-full">
+                <div class="ubtn-inner justify-content-center">
+                  <span class="ubtn-text">Xác nhận</span>
+                </div>
+              </div>
+            </a>
+            <!-- end button.btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal.modal -->
+<!-- end _custom.modalSelect -->
+<!-- ie11polyfills -->
+<script src="js/vendors/ie11polyfills/ie11polyfills.bundles.js"></script>
+<!-- ie11polyfills -->
+<!-- jquery -->
+<script src="js/vendors/jquery/jquery.bundles.js"></script>
+<script src="js/vendors/jquery/jquery.init.js"></script>
+<!-- jquery -->
+<!-- bodyScrollLock -->
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.bundles.js"></script>
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.init.js"></script>
+<!-- bodyScrollLock -->
+<!-- iosInnerHeight -->
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.bundles.js"></script>
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.init.js"></script>
+<!-- iosInnerHeight -->
+<!-- popper -->
+<script src="js/vendors/popper/popper.bundles.js"></script>
+<!-- popper -->
+<!-- bootstrap -->
+<script src="js/vendors/bootstrap/bootstrap.bundles.js"></script>
+<script src="js/vendors/bootstrap/bootstrap.init.js"></script>
+<!-- bootstrap -->
+<!-- jqueryAccordion -->
+<script src="js/vendors/jquery-accordion/jquery-accordion.bundles.js"></script>
+<script src="js/vendors/jquery-accordion/jquery-accordion.init.js"></script>
+<!-- jqueryAccordion -->
+<!-- select2 -->
+<script src="js/vendors/select2/select2.bundles.js"></script>
+<script src="js/vendors/select2/select2.init.js"></script>
+<!-- select2 -->
+<!-- parsley -->
+<script src="js/vendors/parsley/parsley.bundles.js"></script>
+<script src="js/vendors/parsley/parsley.init.js"></script>
+<!-- parsley -->
+<!-- litepicker -->
+<script src="js/vendors/litepicker/litepicker.bundles.js"></script>
+<script src="js/vendors/litepicker/litepicker.init.js"></script>
+<!-- litepicker -->
+<!-- gliderjs -->
+<script src="js/vendors/gliderjs/gliderjs.bundles.js"></script>
+<!-- gliderjs -->
+<!-- cleave -->
+<script src="js/vendors/cleave/cleave.bundles.js"></script>
+<script src="js/vendors/cleave/cleave.init.js"></script>
+<!-- cleave -->
+<!-- autosize -->
+<script src="js/vendors/autosize/autosize.bundles.js"></script>
+<script src="js/vendors/autosize/autosize.init.js"></script>
+<!-- autosize -->
+<!-- script use for this page only -->
+<!-- end script for this page only -->
+<script src="js/custom.js"></script>
+<!-- script use for this page only -->
+<!-- end script for this page only -->
+
+</html>

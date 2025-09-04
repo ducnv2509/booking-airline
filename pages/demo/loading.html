@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="..\..\.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Flight booking -
+    vietinbank
+    default
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="fonts/main/svn-gilroy.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.bundles.css">
+  <!-- end bootstrap -->
+  <!-- gliderjs -->
+  <link rel="stylesheet" href="css/vendors/gliderjs/gliderjs.bundles.css">
+  <!-- end gliderjs -->
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/vendors/select2/select2.bundles.css">
+  <!-- end select2 -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <!-- css use for this page only -->
+  <!-- end css use for this page only -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.bundles.css">
+  <link rel="shortcut icon" type="text/html" href="media/favicon/favicon.png">
+    <script src="../../js/theme.js"></script>
+
+
+</head>
+
+<body class="theme-vietinbank color-theme-default">
+  <div class="loading-main">
+    <div class="loading-ic"></div>
+  </div>
+  <!-- _header -->
+  <header class="header-menu">
+    <div class="header-inner">
+      <div class="container">
+        <div class="row row-0 align-items-center">
+          <div class="col header-left">
+            <div class="header-left-wrap">
+              <div class="header-left-inner">
+                <a href="pages/index.html" class="header-link-item hover-c">Đặt vé máy bay</a>
+                <a href="pages/booking-history/booking-history-list.html" class="header-link-item hover-c">Lịch sử đặt vé</a>
+                <a href="pages/payment/payment.html" class="header-link-item hover-c">Thanh toán vé máy bay</a>
+                <a href="pages/checkin/checkin-1.html" class="header-link-item hover-c">Làm thủ tục</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto header-right">
+            <div class="header-right-wrap">
+              <!-- button.btn -->
+              <a class="ubtn ubg-secondary ubtn-size-default ubg-hover ubg-active btn-call-header" href="tel:1900.5555.20">
+                <div class="ubtn-full">
+                  <div class="row row-8 ubtn-inner justify-content-center">
+                    <span class="ubtn-ic col-auto">
+                      <img src="media/icons-color/default/default/24x24-phone.svg" alt="" class="ic-default">
+                    </span>
+                    <span class="ubtn-text">1900.5555.20</span>
+                  </div>
+                </div>
+              </a>
+              <!-- end button.btn -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end _header -->
+  <div class="main main-with-header footer-invert">
+    <div class="main-wrap">
+      <div class="main-inner main-inner-page">
+        <div class="hero-flight">
+          <div class="hero-cloud"></div>
+          <div class="container">
+            <div class="box box--booking">
+              <div class="box__body">
+                <div class="box--booking-header">
+                  <div class="row list-mb16">
+                    <div class="col-sm order-sm-1">
+                      <div class="box--booking__select-ways">
+                        <div class="row row-8">
+                          <div class="col-6 col-sm-auto">
+                            <!-- _custom.radioButton -->
+                            <label class="ubtn-radio-wrap">
+                              <input type="radio" name="pageSelect" class="hidden" id=twoWay value=body-two-way checked>
+                              <!-- button.btn -->
+                              <div class="ubtn ubg-transparent ubtn-size-sm ubg-hover ubg-active">
+                                <div class="ubtn-full">
+                                  <div class="ubtn-inner justify-content-center">
+                                    <span class="ubtn-text">Khứ hồi</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end button.btn -->
+                            </label>
+                            <!-- end _custom.radioButton -->
+                          </div>
+                          <div class="col-6 col-sm-auto">
+                            <!-- _custom.radioButton -->
+                            <label class="ubtn-radio-wrap">
+                              <input type="radio" name="pageSelect" class="hidden" id=oneWay value=body-one-way>
+                              <!-- button.btn -->
+                              <div class="ubtn ubg-transparent ubtn-size-sm ubg-hover ubg-active">
+                                <div class="ubtn-full">
+                                  <div class="ubtn-inner justify-content-center">
+                                    <span class="ubtn-text">Một chiều</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end button.btn -->
+                            </label>
+                            <!-- end _custom.radioButton -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 order-sm-3 mb">
+                      <div class="from-section form-vertical box-booking--form">
+                        <div class="row row-8 list-mb8 list-crop">
+                          <div class="box-booking-section-1 col-xl-5">
+                            <div class="box--booking-select-loc">
+                              <div class="row row-8 list-mb8 list-crop">
+                                <div class="col">
+                                  <div class="box--booking-select-loc-from">
+                                    <!-- _custom.selectCustomSearch -->
+                                    <!-- dropdown.dropdown -->
+                                    <div class="dropdown dropdown-mobile-wrap dropdown-select-search">
+                                      <div class="dropdown-select-toggle no-bg-color" data-toggle="dropdown" data-flip="false">
+                                        <!-- forms.input -->
+                                        <div class="form-group">
+                                          <div class="input-group-wrap input-group-default">
+                                            <div class="input-group">
+                                              <div class="input input-size-default input-default input-label-change input-ic-default input-has-clear input-ic-left input-tag input-tag-placeholder">
+                                                <div class="inner" data-title>Chọn</div>
+                                              </div>
+                                              <div class="input-frame"></div>
+                                              <div class="input-flex-content input-flex-content-left">
+                                                <div class="input-ic-txt">
+                                                  Từ
+                                                </div>
+                                              </div>
+                                              <div class="input-flex-content">
+                                                <div class="input-ic input-clear pointer">
+                                                  <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="input-size-default input-group-extend input-ic-default">
+                                              <div class="pr8 b color-sub-default" data-sub="data-sub"></div>
+                                            </div>
+                                          </div>
+                                          <div class="errorBlock"></div>
+                                        </div>
+                                        <!-- end forms.input -->
+                                      </div>
+                                      <div class="dropdown-menu dropdown-menu-left dropdown-click dropdown-mobile dropdown-mobile--full dropdown-size-md dropdown-select-search-content" aria-labelledby="dropdownMenuButton">
+                                        <div class="dropdown-uheader">
+                                          <div class="dropdown-uheader-content">
+                                            <div class="dropdown-select-search-inner">
+                                              <div class="row row-8">
+                                                <div class="col">
+                                                  <!-- forms.input -->
+                                                  <div class="form-group">
+                                                    <div class="input-group-wrap input-group-default">
+                                                      <div class="input-group">
+                                                        <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear input-ic-left search-dropdown" autocorrect="off" placeholder="Chọn" data-title value="">
+                                                        <div class="input-frame"></div>
+                                                        <div class="input-flex-content input-flex-content-left">
+                                                          <div class="input-ic-txt">
+                                                            Từ
+                                                          </div>
+                                                        </div>
+                                                        <div class="input-flex-content">
+                                                          <div class="input-ic input-clear pointer">
+                                                            <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="errorBlock"></div>
+                                                  </div>
+                                                  <!-- end forms.input -->
+                                                </div>
+                                                <div class="col-auto d-sm-none">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-default ubtn-square ubg-hover ubg-active dropdown-close">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-body">
+                                          <ul class="dropdown-select-list">
+                                            <li data-title="Hà Nội, Việt Nam" data-sub="HNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Hà Nội, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">HNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Hải Phòng, Việt Nam" data-sub="HPA">
+                                              <div class="row row-8">
+                                                <div class="col title">Hải Phòng, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">HPA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Đà Nẵng, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Đà Nẵng, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Cần Thơ, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Cần Thơ, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="TP Hồ Chí Minh, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">TP Hồ Chí Minh, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Quảng Ngãi, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Quảng Ngãi, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end dropdown.dropdown -->
+                                    <!-- end _custom.selectCustomSearch -->
+                                  </div>
+                                </div>
+                                <div class="col-auto">
+                                  <div class="box--booking-select-loc-switch">
+                                    <!-- button.btn -->
+                                    <button class="ubtn ubg-secondary ubtn-circle-size-default ubtn-square ubg-hover ubg-active">
+                                      <div class="ubtn-full">
+                                        <img src="media/icons-color/default/default/24x24-replace.svg" alt="" class="ic-default">
+                                      </div>
+                                    </button>
+                                    <!-- end button.btn -->
+                                  </div>
+                                </div>
+                                <div class="col-sm">
+                                  <div class="box--booking-select-loc-to">
+                                    <!-- _custom.selectCustomSearch -->
+                                    <!-- dropdown.dropdown -->
+                                    <div class="dropdown dropdown-mobile-wrap dropdown-select-search">
+                                      <div class="dropdown-select-toggle no-bg-color" data-toggle="dropdown" data-flip="false">
+                                        <!-- forms.input -->
+                                        <div class="form-group">
+                                          <div class="input-group-wrap input-group-default">
+                                            <div class="input-group">
+                                              <div class="input input-size-default input-default input-label-change input-ic-default input-has-clear input-ic-left input-tag input-tag-placeholder">
+                                                <div class="inner" data-title>Chọn</div>
+                                              </div>
+                                              <div class="input-frame"></div>
+                                              <div class="input-flex-content input-flex-content-left">
+                                                <div class="input-ic-txt">
+                                                  Đến
+                                                </div>
+                                              </div>
+                                              <div class="input-flex-content">
+                                                <div class="input-ic input-clear pointer">
+                                                  <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="input-size-default input-group-extend input-ic-default">
+                                              <div class="pr8 b color-sub-default" data-sub="data-sub"></div>
+                                            </div>
+                                          </div>
+                                          <div class="errorBlock"></div>
+                                        </div>
+                                        <!-- end forms.input -->
+                                      </div>
+                                      <div class="dropdown-menu dropdown-menu-left dropdown-click dropdown-mobile dropdown-mobile--full dropdown-size-md dropdown-select-search-content" aria-labelledby="dropdownMenuButton">
+                                        <div class="dropdown-uheader">
+                                          <div class="dropdown-uheader-content">
+                                            <div class="dropdown-select-search-inner">
+                                              <div class="row row-8">
+                                                <div class="col">
+                                                  <!-- forms.input -->
+                                                  <div class="form-group">
+                                                    <div class="input-group-wrap input-group-default">
+                                                      <div class="input-group">
+                                                        <input type="text" class="input input-size-default input-default input-label-change input-ic-default input-has-clear input-ic-left search-dropdown" autocorrect="off" placeholder="Chọn" data-title value="">
+                                                        <div class="input-frame"></div>
+                                                        <div class="input-flex-content input-flex-content-left">
+                                                          <div class="input-ic-txt">
+                                                            Đến
+                                                          </div>
+                                                        </div>
+                                                        <div class="input-flex-content">
+                                                          <div class="input-ic input-clear pointer">
+                                                            <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="errorBlock"></div>
+                                                  </div>
+                                                  <!-- end forms.input -->
+                                                </div>
+                                                <div class="col-auto d-sm-none">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-default ubtn-square ubg-hover ubg-active dropdown-close">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-body">
+                                          <ul class="dropdown-select-list">
+                                            <li data-title="Hà Nội, Việt Nam" data-sub="HNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Hà Nội, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">HNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Hải Phòng, Việt Nam" data-sub="HPA">
+                                              <div class="row row-8">
+                                                <div class="col title">Hải Phòng, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">HPA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Đà Nẵng, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Đà Nẵng, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Cần Thơ, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Cần Thơ, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="TP Hồ Chí Minh, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">TP Hồ Chí Minh, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Quảng Ngãi, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Quảng Ngãi, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                            <li data-title="Bình Thuận, Việt Nam" data-sub="DNA">
+                                              <div class="row row-8">
+                                                <div class="col title">Bình Thuận, Việt Nam</div>
+                                                <div class="col-auto sub-title color-sub-default weight5">DNA</div>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end dropdown.dropdown -->
+                                    <!-- end _custom.selectCustomSearch -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-booking-section-2 col-xl-7">
+                            <div class="row row-8 list-mb8 list-crop">
+                              <div class="col-md col-sm-6 one-way">
+                                <!-- forms.datepicker -->
+                                <div class="form-group">
+                                  <div class="input-group-wrap input-group-default">
+                                    <div class="input-group">
+                                      <input type="text" class="lite-picker input input-default input-label-change input-size-default input-ic-default" value="" placeholder="Ngày đi" lptitle="" header-text="Ngày đi">
+                                      <div class="input-frame"></div>
+                                      <div class="input-ic">
+                                        <img src="media/icons-color/subdefault/default/24x24-calendarrange.svg" class="ic-default" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="errorBlock"></div>
+                                </div>
+                                <!-- end forms.datepicker -->
+                              </div>
+                              <div class="col-md col-sm-6 two-way">
+                                <!-- forms.datepicker -->
+                                <div class="form-group">
+                                  <div class="input-group-wrap input-group-default">
+                                    <div class="input-group">
+                                      <input type="text" class="lite-picker-range-2nd input input-default input-label-change input-size-default input-ic-default" value="" placeholder="Ngày đi" lptitle="" header-text="Ngày đi">
+                                      <div class="input-frame"></div>
+                                      <div class="input-ic">
+                                        <img src="media/icons-color/subdefault/default/24x24-calendarrange.svg" class="ic-default" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="errorBlock"></div>
+                                </div>
+                                <!-- end forms.datepicker -->
+                              </div>
+                              <div class="col-md col-sm-6 two-way">
+                                <!-- forms.datepicker -->
+                                <div class="form-group">
+                                  <div class="input-group-wrap input-group-default">
+                                    <div class="input-group">
+                                      <input type="text" class="lite-picker-range-2nd input input-default input-label-change input-size-default input-ic-default" value="" placeholder="Ngày về" lptitle="" header-text="Ngày về">
+                                      <div class="input-frame"></div>
+                                      <div class="input-ic">
+                                        <img src="media/icons-color/subdefault/default/24x24-calendarrange.svg" class="ic-default" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="errorBlock"></div>
+                                </div>
+                                <!-- end forms.datepicker -->
+                              </div>
+                              <div class="col">
+                                <div class="box--booking__select--flight-brand">
+                                  <!-- _custom.dropdownMultipeSelect -->
+                                  <!-- dropdown.dropdown -->
+                                  <div class="dropdown dropdown-mobile-wrap dropdown-select-multiple-search">
+                                    <div class="dropdown-select-multiple-toggle no-bg-color" data-toggle="dropdown" data-flip="false">
+                                      <!-- forms.input -->
+                                      <div class="form-group">
+                                        <div class="input-group-wrap input-group-default">
+                                          <div class="input-group">
+                                            <div class="input input-size-default input-default input-label-change input-ic-default input-has-clear input-ic-right input-tag input-tag-placeholder">
+                                              <div class="inner" data-title>Hãng hàng không</div>
+                                            </div>
+                                            <div class="input-frame"></div>
+                                            <div class="input-flex-content">
+                                              <div class="input-ic input-clear pointer">
+                                                <img src="media/icons-color/subdefault/default/24x24-close-circle.svg" alt="" class="ic-sm">
+                                              </div>
+                                              <div class="input-ic">
+                                                <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="errorBlock"></div>
+                                      </div>
+                                      <!-- end forms.input -->
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-left dropdown-click dropdown-mobile dropdown-size-md dropdown-select-multiple-search-content width-auto" aria-labelledby="dropdownMenuButton">
+                                      <div class="dropdown-uheader">
+                                        <div class="dropdown-mobile-title">
+                                          <div class="row">
+                                            <div class="col">
+                                              <div class="title h3">Chọn hãng hàng không ưa thích</div>
+                                            </div>
+                                            <div class="col-auto">
+                                              <!-- button.btn -->
+                                              <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active dropdown-close">
+                                                <div class="ubtn-full">
+                                                  <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                                                </div>
+                                              </button>
+                                              <!-- end button.btn -->
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-uheader-content">
+                                        </div>
+                                      </div>
+                                      <div class="dropdown-body">
+                                        <ul class="dropdown-select-multiple-list">
+                                          <li class="select-data">
+                                            <!-- rnc.checkbox -->
+                                            <div class="form-group">
+                                              <label class="checkbox color-default">
+                                                <input type="checkbox" class="hidden" name="" value="">
+                                                <div class="rnc-ic-wrap align-items-center order-1">
+                                                  <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                                </div>
+                                                <div class="rnc-custom-content flex-grow-1">
+                                                  <div class="row row-8">
+                                                    <div class="col-auto">
+                                                      <div class="ic default-bg circle-default circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vna.svg);"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="title">Vietnam Airlines</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </label>
+                                              <div class="errorBlock"></div>
+                                            </div>
+                                            <!-- end rnc.checkbox -->
+                                          </li>
+                                          <li class="select-data">
+                                            <!-- rnc.checkbox -->
+                                            <div class="form-group">
+                                              <label class="checkbox color-default">
+                                                <input type="checkbox" class="hidden" name="" value="">
+                                                <div class="rnc-ic-wrap align-items-center order-1">
+                                                  <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                                </div>
+                                                <div class="rnc-custom-content flex-grow-1">
+                                                  <div class="row row-8">
+                                                    <div class="col-auto">
+                                                      <div class="ic default-bg circle-default circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-pa.svg);"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="title">Pacific Airlines</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </label>
+                                              <div class="errorBlock"></div>
+                                            </div>
+                                            <!-- end rnc.checkbox -->
+                                          </li>
+                                          <li class="select-data">
+                                            <!-- rnc.checkbox -->
+                                            <div class="form-group">
+                                              <label class="checkbox color-default">
+                                                <input type="checkbox" class="hidden" name="" value="">
+                                                <div class="rnc-ic-wrap align-items-center order-1">
+                                                  <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                                </div>
+                                                <div class="rnc-custom-content flex-grow-1">
+                                                  <div class="row row-8">
+                                                    <div class="col-auto">
+                                                      <div class="ic default-bg circle-default circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vja.svg);"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="title">Vietjet Air</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </label>
+                                              <div class="errorBlock"></div>
+                                            </div>
+                                            <!-- end rnc.checkbox -->
+                                          </li>
+                                          <li class="select-data">
+                                            <!-- rnc.checkbox -->
+                                            <div class="form-group">
+                                              <label class="checkbox color-default">
+                                                <input type="checkbox" class="hidden" name="" value="">
+                                                <div class="rnc-ic-wrap align-items-center order-1">
+                                                  <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                                </div>
+                                                <div class="rnc-custom-content flex-grow-1">
+                                                  <div class="row row-8">
+                                                    <div class="col-auto">
+                                                      <div class="ic default-bg circle-default circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-ba.svg);"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="title">Bamboo Airways</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </label>
+                                              <div class="errorBlock"></div>
+                                            </div>
+                                            <!-- end rnc.checkbox -->
+                                          </li>
+                                          <li class="select-data">
+                                            <!-- rnc.checkbox -->
+                                            <div class="form-group">
+                                              <label class="checkbox color-default">
+                                                <input type="checkbox" class="hidden" name="" value="">
+                                                <div class="rnc-ic-wrap align-items-center order-1">
+                                                  <span class="checkbox-ic checkbox-size-default checkbox-style-default ripple-checkbox"></span>
+                                                </div>
+                                                <div class="rnc-custom-content flex-grow-1">
+                                                  <div class="row row-8">
+                                                    <div class="col-auto">
+                                                      <div class="ic default-bg circle-default circle-square" style="background-image: url(media/img/logo-airline-32x32/32x32-logo-vta.svg);"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="title">Vietravel Airlines</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </label>
+                                              <div class="errorBlock"></div>
+                                            </div>
+                                            <!-- end rnc.checkbox -->
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end dropdown.dropdown -->
+                                  <!-- end _custom.dropdownMultipeSelect -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-auto order-sm-2">
+                      <div class="from-section form-vertical">
+                        <div class="row row-8 justify-content-between">
+                          <div class="col-auto">
+                            <div class="box--booking__select-passenger">
+                              <!-- dropdown.dropdown -->
+                              <div class="dropdown dropdown-mobile-wrap">
+                                <!-- button.btn -->
+                                <button class="ubtn ubg-transparent ubtn-size-sm ubg-hover ubg-active" data-toggle="dropdown">
+                                  <div class="ubtn-full">
+                                    <div class="row row-8 ubtn-inner justify-content-center">
+                                      <span class="ubtn-ic col-auto">
+                                        <img src="media/icons-color/default/default/24x24-passengers.svg" alt="" class="ic-default">
+                                      </span>
+                                      <span class="ubtn-text">2 <span class="d-none d-sm-inline passenger-total-title">Hành khách</span></span>
+                                      <span class="ubtn-ic col-auto">
+                                        <img src="media/icons-color/default/default/24x24-chevrondown.svg" alt="" class="ic-default">
+                                      </span>
+                                    </div>
+                                  </div>
+                                </button>
+                                <!-- end button.btn -->
+                                <div class="dropdown-menu dropdown-menu-right dropdown-click dropdown-mobile dropdown-size-sm" aria-labelledby="dropdownMenuButton">
+                                  <div class="dropdown-uheader">
+                                    <div class="dropdown-mobile-title">
+                                      <div class="row">
+                                        <div class="col">
+                                          <div class="title h3">Hành khách</div>
+                                        </div>
+                                        <div class="col-auto">
+                                          <!-- button.btn -->
+                                          <button class="ubtn ubg-transparent ubtn-circle-size-default ubtn-square ubg-hover ubg-active dropdown-close">
+                                            <div class="ubtn-full">
+                                              <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                                            </div>
+                                          </button>
+                                          <!-- end button.btn -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown-uheader-content">
+                                    </div>
+                                  </div>
+                                  <div class="dropdown-body">
+                                    <ul class="dropdown-passenger-inner">
+                                      <li>
+                                        <div class="row row-8">
+                                          <div class="col">
+                                            <div class="p title">
+                                              Người lớn
+                                            </div>
+                                            <div class="p3 color-sub-default sub-title">
+                                              12 tuổi trờ lên
+                                            </div>
+                                          </div>
+                                          <div class="col-auto">
+                                            <div class="counter">
+                                              <div class="row row-8">
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-minus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                                <div class="col-auto">
+                                                  <div class="counter-number ph8">
+                                                    1
+                                                  </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-plus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="row row-8">
+                                          <div class="col">
+                                            <div class="p title">
+                                              Trẻ em
+                                            </div>
+                                            <div class="p3 color-sub-default sub-title">
+                                              2 đến 12 tuổi
+                                            </div>
+                                          </div>
+                                          <div class="col-auto">
+                                            <div class="counter">
+                                              <div class="row row-8">
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-minus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                                <div class="col-auto">
+                                                  <div class="counter-number ph8">
+                                                    1
+                                                  </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-plus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="row row-8">
+                                          <div class="col">
+                                            <div class="p title">
+                                              Em bé
+                                            </div>
+                                            <div class="p3 color-sub-default sub-title">
+                                              Dưới 2 tuổi
+                                            </div>
+                                          </div>
+                                          <div class="col-auto">
+                                            <div class="counter">
+                                              <div class="row row-8">
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active" disabled>
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-minus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                                <div class="col-auto">
+                                                  <div class="counter-number ph8">
+                                                    0
+                                                  </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                  <!-- button.btn -->
+                                                  <button class="ubtn ubg-secondary ubtn-circle-size-sm ubtn-square ubg-hover ubg-active">
+                                                    <div class="ubtn-full">
+                                                      <img src="media/icons-color/default/default/24x24-plus.svg" alt="" class="ic-default">
+                                                    </div>
+                                                  </button>
+                                                  <!-- end button.btn -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="dropdown-footer">
+                                    <!-- _custom.formBtnGroup -->
+                                    <div class="form-btn-group">
+                                      <div class="row row-8 list-mb8 list-crop">
+                                        <div class="">
+                                          <!-- button.btn -->
+                                          <button class="ubtn ubg-secondary ubtn-size-sm ubg-hover ubg-active dropdown-close">
+                                            <div class="ubtn-full">
+                                              <div class="ubtn-inner justify-content-center">
+                                                <span class="ubtn-text">Huỷ</span>
+                                              </div>
+                                            </div>
+                                          </button>
+                                          <!-- end button.btn -->
+                                        </div>
+                                        <div class="block-right">
+                                          <!-- button.btn -->
+                                          <button class="ubtn ubg-primary ubtn-size-sm ubg-hover ubg-active dropdown-close">
+                                            <div class="ubtn-full">
+                                              <div class="ubtn-inner justify-content-center">
+                                                <span class="ubtn-text">Xác nhận</span>
+                                              </div>
+                                            </div>
+                                          </button>
+                                          <!-- end button.btn -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end _custom.formBtnGroup -->
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end dropdown.dropdown -->
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="box--booking__select-seats">
+                              <!-- forms.select -->
+                              <div class="form-group">
+                                <div class="input-group-wrap input-group-default">
+                                  <div class="input-group">
+                                    <select name="" class="select-2 select-trans input input-size-sm input-ic-sm input-default input-label-change" header-text="Hạng vé" data-minimum-results-for-search="Infinity" data-placeholder="" data-pos="right">
+                                      <option value=""></option>
+                                      <option selected>Hạng phổ thông</option>
+                                      <option>Hạng thương gia</option>
+                                    </select>
+                                    <div class="input-frame"></div>
+                                    <div class="input-ic">
+                                      <img src="media/icons-color/default/default/24x24-chevrondown.svg" class="ic-default" alt="">
+                                    </div>
+                                    <div class="input-flex-content input-flex-content-left">
+                                      <div class="input-ic">
+                                        <img src="media/icons-color/default/default/24x24-seat.svg" class="ic-default" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="errorBlock"></div>
+                              </div>
+                              <!-- end forms.select -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box--booking-footer">
+                  <div class="row row-8 justify-content-center">
+                    <div class="col-auto">
+                      <!-- button.btn -->
+                      <a class="ubtn ubg-primary ubtn-size-default ubtn-min-width-xl ubg-hover ubg-active" href="pages/booking/flight-list.html">
+                        <div class="ubtn-full">
+                          <div class="ubtn-inner justify-content-center">
+                            <span class="ubtn-text">Tìm chuyến bay</span>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- end button.btn -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-history">
+          <div class="container">
+            <div class="flight-history__inner">
+              <div class="title h3">
+                Lịch sử tìm kiếm chuyến bay
+              </div>
+              <div class="flight-history__body">
+                <div class="glider-flight-history-wrap">
+                  <div class="glider glider-flight-history">
+                    <div class="glider-slide">
+                      <a href="" class="flight-history-card">
+                        <!-- button.btn -->
+                        <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active ubtn-close">
+                          <div class="ubtn-full">
+                            <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                          </div>
+                        </button>
+                        <!-- end button.btn -->
+                        <div class="flight-history-card-inner list-mb16 list-last-mb">
+                          <div class="flight-history-body color-default">
+                            <div class="flight-history-card__title weight5">
+                              <div class="row row-4 align-items-center">
+                                <div class="col-auto">HAN</div>
+                                <div class="col-auto"><img src="media/icons-color/subdefault/default/24x24-flightsoneway.svg" alt=""></div>
+                                <div class="col-auto">SGN</div>
+                              </div>
+                            </div>
+                            <div class="flight-history-card__sub-title color-sub-default p3">
+                              T4, 16 tháng 12
+                            </div>
+                          </div>
+                          <div class="flight-history-body flight-history-body-tag">
+                            <div class="row row-8 list-mb4 list-crop">
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-passengers.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    4
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-seat.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    Hạng phổ thông
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="glider-slide">
+                      <a href="" class="flight-history-card">
+                        <!-- button.btn -->
+                        <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active ubtn-close">
+                          <div class="ubtn-full">
+                            <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                          </div>
+                        </button>
+                        <!-- end button.btn -->
+                        <div class="flight-history-card-inner list-mb16 list-last-mb">
+                          <div class="flight-history-body color-default">
+                            <div class="flight-history-card__title weight5">
+                              <div class="row row-4 align-items-center">
+                                <div class="col-auto">HAN</div>
+                                <div class="col-auto"><img src="media/icons-color/subdefault/default/24x24-flightsoneway.svg" alt=""></div>
+                                <div class="col-auto">SGN</div>
+                              </div>
+                            </div>
+                            <div class="flight-history-card__sub-title color-sub-default p3">
+                              T4, 16 tháng 12
+                            </div>
+                          </div>
+                          <div class="flight-history-body flight-history-body-tag">
+                            <div class="row row-8 list-mb4 list-crop">
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-passengers.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    4
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-seat.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    Hạng phổ thông
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="glider-slide">
+                      <a href="" class="flight-history-card">
+                        <!-- button.btn -->
+                        <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active ubtn-close">
+                          <div class="ubtn-full">
+                            <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                          </div>
+                        </button>
+                        <!-- end button.btn -->
+                        <div class="flight-history-card-inner list-mb16 list-last-mb">
+                          <div class="flight-history-body color-default">
+                            <div class="flight-history-card__title weight5">
+                              <div class="row row-4 align-items-center">
+                                <div class="col-auto">HAN</div>
+                                <div class="col-auto"><img src="media/icons-color/subdefault/default/24x24-flightsoneway.svg" alt=""></div>
+                                <div class="col-auto">SGN</div>
+                              </div>
+                            </div>
+                            <div class="flight-history-card__sub-title color-sub-default p3">
+                              T4, 16 tháng 12
+                            </div>
+                          </div>
+                          <div class="flight-history-body flight-history-body-tag">
+                            <div class="row row-8 list-mb4 list-crop">
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-passengers.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    4
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-seat.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    Hạng phổ thông
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="glider-slide">
+                      <a href="" class="flight-history-card">
+                        <!-- button.btn -->
+                        <button class="ubtn ubg-transparent ubtn-circle-size-sm ubtn-square ubg-hover ubg-active ubtn-close">
+                          <div class="ubtn-full">
+                            <img src="media/icons-color/subdefault/default/24x24-close.svg" alt="" class="ic-default">
+                          </div>
+                        </button>
+                        <!-- end button.btn -->
+                        <div class="flight-history-card-inner list-mb16 list-last-mb">
+                          <div class="flight-history-body color-default">
+                            <div class="flight-history-card__title weight5">
+                              <div class="row row-4 align-items-center">
+                                <div class="col-auto">HAN</div>
+                                <div class="col-auto"><img src="media/icons-color/subdefault/default/24x24-flightsoneway.svg" alt=""></div>
+                                <div class="col-auto">SGN</div>
+                              </div>
+                            </div>
+                            <div class="flight-history-card__sub-title color-sub-default p3">
+                              T4, 16 tháng 12
+                            </div>
+                          </div>
+                          <div class="flight-history-body flight-history-body-tag">
+                            <div class="row row-8 list-mb4 list-crop">
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-passengers.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    4
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                              <div class="col-auto">
+                                <!-- util.tag -->
+                                <div class="tag ubg-porcelain-light tag-size-default">
+                                  <div class="tag-ic">
+                                    <img src="media/icons-color/default/default/24x24-seat.svg" alt="">
+                                  </div>
+                                  <div class="tag-title p3 weight5">
+                                    Hạng phổ thông
+                                  </div>
+                                </div>
+                                <!-- end util.tag -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partner text-center">
+          <div class="container">
+            <div class="partner__inner">
+              <div class="header mb32">
+                <div class="title d2 mb8">
+                  Đối tác hàng không
+                </div>
+                <div class="sub-title p1">
+                  Chúng tôi làm việc với hơn 30 hãng hàng không trên khắp thế giới
+                </div>
+              </div>
+              <div class="body">
+                <div class="partner__logo">
+                  <div class="row list-mb16 list-crop">
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/vietnam.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/vietjet.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/bamboo.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/pacific.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/cebu-pacific.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/lion air.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/scoot.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/eva-air.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/airasia.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/ana.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/cathay-pacific.png" alt=""></div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-4 partner__logo-item">
+                      <div class="partner__logo-inner"><img src="media/img/logo-airline/emirates.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="main-footer-inner">
+          <div class="container">
+            <div class="row row-4 justify-content-center align-items-center">
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Điều khoản sử dụng dịch vụ đặt vé</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default">|</div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="" class="block list-item p3">
+                  <div class="txt color-default hover-c">Biểu phí dịch vụ đặt vé</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<!-- ie11polyfills -->
+<script src="js/vendors/ie11polyfills/ie11polyfills.bundles.js"></script>
+<!-- ie11polyfills -->
+<!-- jquery -->
+<script src="js/vendors/jquery/jquery.bundles.js"></script>
+<script src="js/vendors/jquery/jquery.init.js"></script>
+<!-- jquery -->
+<!-- bodyScrollLock -->
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.bundles.js"></script>
+<script src="js/vendors/bodyScrollLock/bodyScrollLock.init.js"></script>
+<!-- bodyScrollLock -->
+<!-- iosInnerHeight -->
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.bundles.js"></script>
+<script src="js/vendors/iosInnerHeight/iosInnerHeight.init.js"></script>
+<!-- iosInnerHeight -->
+<!-- popper -->
+<script src="js/vendors/popper/popper.bundles.js"></script>
+<!-- popper -->
+<!-- bootstrap -->
+<script src="js/vendors/bootstrap/bootstrap.bundles.js"></script>
+<script src="js/vendors/bootstrap/bootstrap.init.js"></script>
+<!-- bootstrap -->
+<!-- jqueryAccordion -->
+<script src="js/vendors/jquery-accordion/jquery-accordion.bundles.js"></script>
+<script src="js/vendors/jquery-accordion/jquery-accordion.init.js"></script>
+<!-- jqueryAccordion -->
+<!-- select2 -->
+<script src="js/vendors/select2/select2.bundles.js"></script>
+<script src="js/vendors/select2/select2.init.js"></script>
+<!-- select2 -->
+<!-- parsley -->
+<script src="js/vendors/parsley/parsley.bundles.js"></script>
+<script src="js/vendors/parsley/parsley.init.js"></script>
+<!-- parsley -->
+<!-- litepicker -->
+<script src="js/vendors/litepicker/litepicker.bundles.js"></script>
+<script src="js/vendors/litepicker/litepicker.init.js"></script>
+<!-- litepicker -->
+<!-- gliderjs -->
+<script src="js/vendors/gliderjs/gliderjs.bundles.js"></script>
+<!-- gliderjs -->
+<!-- cleave -->
+<script src="js/vendors/cleave/cleave.bundles.js"></script>
+<script src="js/vendors/cleave/cleave.init.js"></script>
+<!-- cleave -->
+<!-- autosize -->
+<script src="js/vendors/autosize/autosize.bundles.js"></script>
+<script src="js/vendors/autosize/autosize.init.js"></script>
+<!-- autosize -->
+<!-- script use for this page only -->
+<!-- end script for this page only -->
+<script src="js/custom.js"></script>
+<!-- script use for this page only -->
+<!-- end script for this page only -->
+
+</html>

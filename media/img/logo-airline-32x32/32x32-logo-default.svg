@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_8670" data-name="Path 8670" d="M0,0,5.842,16.421H24a5.872,5.872,0,0,0-1.76-.718,12.207,12.207,0,0,1-4.872-2.945C16.121,11.51,5.716.821,5.716.821S4.989,0,4.358,0Z" fill="#bfccd9"/>
+    </clipPath>
+  </defs>
+  <g id="_32x32-Logo-Default" data-name="32x32-Logo-Default" transform="translate(0.5 0.5)">
+    <g id="_32x32-Logo-BA" data-name="32x32-Logo-BA" transform="translate(-8303 -2545)">
+      <rect id="Container32" width="32" height="32" rx="6" transform="translate(8303 2545)" fill="#f5f7f9" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <g id="Group_12278" data-name="Group 12278" transform="translate(6 7)">
+      <g id="Group_12277" data-name="Group 12277" clip-path="url(#clip-path)">
+        <rect id="Rectangle_5074" data-name="Rectangle 5074" width="24" height="16.421" transform="translate(0 0)" fill="#bfccd9"/>
+      </g>
+    </g>
+  </g>
+</svg>
