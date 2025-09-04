@@ -292,6 +292,7 @@
             // biến mọi mã != 2xx thành lỗi
             const body = await res.text();
             if (!res.ok) {
+              alert('Có lỗi trong truy vấn')
               throw new Error(
                 `PH_TEST: lookup failed — HTTP ${res.status} ${body.slice(
                   0,
